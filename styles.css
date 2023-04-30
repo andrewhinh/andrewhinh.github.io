@@ -25,10 +25,10 @@ ul {
 }
 
 h1 {
-  font-size: clamp(2rem, -4vw + 0.34375rem, 4rem);
+  font-size: clamp(2rem, -4vw + 5.5rem, 4rem);
 }
 
 p,
 ul li {
-  font-size: clamp(1rem, -2vw + 0.171875rem, 2rem);
+  font-size: clamp(1rem, -2vw + 2.75rem, 2rem);
 }
