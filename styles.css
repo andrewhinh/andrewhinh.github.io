@@ -10,14 +10,16 @@ body {
 }
 
 div {
-  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media (min-width: 0px) {
   h1 {
-    font-size: 3rem;
+    font-size: 8rem;
+  }
+  div {
+    max-width: 95%;
   }
   p,
   ul li {
@@ -26,19 +28,25 @@ div {
 }
 
 @media (min-width: 400px) {
+  h1 {
+    font-size: calc(8rem - 8vw);
+  }
   p,
   ul li {
-    font-size: calc(2rem + 2vw);
+    font-size: calc(2rem - 2vw);
   }
 }
 
 @media (min-width: 1001px) {
   h1 {
-    font-size: 4rem;
+    font-size: 2rem;
+  }
+  div {
+    max-width: 75%;
   }
   p,
   ul li {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 }
 
