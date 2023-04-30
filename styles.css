@@ -1,4 +1,4 @@
-body {
+div {
   color: rgb(230, 230, 230);
   background-color: black;
   font-family: Helvetica sans-serif;
@@ -6,11 +6,6 @@ body {
 }
 
 ul {
-  display: table;
-  margin: 0 auto;
-}
-
-li {
   display: inline-block;
-  margin: 0 10px;
+  text-align: left;
 }
