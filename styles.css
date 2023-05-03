@@ -39,13 +39,13 @@ li {
   margin-right: auto;
 }
 
-.roles {
+.list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.role {
+.list-item {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
