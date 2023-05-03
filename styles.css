@@ -15,6 +15,9 @@ a {
 
 ul {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 /* Increasing font for smaller devices:
@@ -39,13 +42,7 @@ li {
   margin-right: auto;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.list-item {
+.ul-item {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
