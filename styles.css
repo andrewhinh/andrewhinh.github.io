@@ -10,7 +10,10 @@ body {
 }
 
 div {
-  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -20,11 +23,10 @@ a {
 }
 
 ul {
-  display: inline-block;
   text-align: left;
 }
 
-/* How to calculate preferred value for clamp()
+/* Increasing font for smaller devices:
 - https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/#calculating-preferred-value-parameters-based-on-specific-starting-and-ending-points
 - https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/#using-negative-viewport-value-for-fluid-sizing
 */
