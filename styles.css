@@ -9,14 +9,17 @@ body {
   text-align: center;
 }
 
-a:link a:visited {
-  color: rgb(60, 132, 249);
+a {
   text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: rgb(60, 132, 249);
 }
 
 a:hover {
   color: rgb(134, 176, 254);
-  text-decoration: none;
   transition: 0.5s;
 }
 
