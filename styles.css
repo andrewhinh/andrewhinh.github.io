@@ -78,7 +78,7 @@ li {
 }
 
 .reg-display {
-  max-width: 400px;
+  width: 400px;
   object-fit: contain;
 }
 
