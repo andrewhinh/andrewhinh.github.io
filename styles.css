@@ -27,6 +27,11 @@ ul {
   text-align: left;
 }
 
+img,
+video {
+  object-fit: contain;
+}
+
 /* Increasing font for smaller devices:
 - https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/#calculating-preferred-value-parameters-based-on-specific-starting-and-ending-points
 - https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/#using-negative-viewport-value-for-fluid-sizing
@@ -66,8 +71,7 @@ li {
 }
 
 .logo {
-  min-width: 100px;
-  max-width: 100px;
+  width: 100px;
   object-fit: contain;
 }
 
@@ -79,12 +83,9 @@ li {
 }
 
 .reg-display {
-  min-width: 400px;
-  max-width: 400px;
-  object-fit: contain;
+  width: 400px;
 }
 
 .long-display {
   max-width: 800px;
-  object-fit: contain;
 }
