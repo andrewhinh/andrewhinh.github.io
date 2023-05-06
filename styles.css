@@ -66,6 +66,7 @@ li {
 }
 
 .logo {
+  min-width: 100px;
   max-width: 100px;
   object-fit: contain;
 }
@@ -78,7 +79,8 @@ li {
 }
 
 .reg-display {
-  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
   object-fit: contain;
 }
 
