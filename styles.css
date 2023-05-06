@@ -61,25 +61,23 @@ li {
   gap: 1rem;
 }
 
-.ul-display-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
 .logo-container {
   flex-shrink: 0;
 }
 
 .logo {
   width: 100px;
+  object-fit: contain;
+}
+
+.ul-display-item {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-shrink: 0;
 }
 
 .reg-display {
   width: 400px;
-}
-
-.long-display {
-  width: 1000px;
+  object-fit: contain;
 }
