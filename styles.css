@@ -72,7 +72,7 @@ li {
 
 .logo {
   width: 100px;
-  object-fit: contain;
+  max-height: 400px;
 }
 
 .ul-display-item {
@@ -84,8 +84,10 @@ li {
 
 .reg-display {
   width: 400px;
+  max-height: 800px;
 }
 
 .long-display {
   max-width: 800px;
+  max-height: 800px;
 }
