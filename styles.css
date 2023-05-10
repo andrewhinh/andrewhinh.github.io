@@ -82,12 +82,7 @@ li {
   flex-shrink: 0;
 }
 
-.reg-display {
-  width: 400px;
-  max-height: 1500px;
-}
-
-.long-display {
-  max-width: 800px;
-  max-height: 1500px;
+.display {
+  width: 800px;
+  max-height: 600px;
 }
