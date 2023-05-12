@@ -9,6 +9,15 @@ body {
   text-align: center;
 }
 
+ul {
+  text-align: left;
+}
+
+img,
+video {
+  object-fit: contain;
+}
+
 a {
   text-decoration: none;
 }
@@ -21,15 +30,6 @@ a:visited {
 a:hover {
   color: rgb(148, 185, 253);
   transition: 0.1s;
-}
-
-ul {
-  text-align: left;
-}
-
-img,
-video {
-  object-fit: contain;
 }
 
 /* Increasing font for smaller devices:
@@ -80,8 +80,8 @@ li {
 
 .ul-display-item {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-  flex-wrap: wrap;
   flex-shrink: 0;
 }
 
