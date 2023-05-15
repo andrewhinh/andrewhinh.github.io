@@ -57,7 +57,7 @@ li {
   margin-bottom: 50px;
 }
 
-.ul-spaced {
+.col-spaced {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -67,6 +67,11 @@ li {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.logo-text {
+  margin-top: 0;
+  text-align: center;
 }
 
 .logo-container {
