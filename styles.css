@@ -93,6 +93,14 @@ li {
   flex-shrink: 0;
 }
 
+.ul-display-item.left {
+  align-items: left;
+}
+
+.ul-display-item.center {
+  align-items: center;
+}
+
 .display {
   width: 800px;
   max-height: 600px;
