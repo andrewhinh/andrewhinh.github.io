@@ -53,15 +53,9 @@ dl {
   text-align: left;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container {
+  margin: auto auto 100px auto;
   width: min(95%, 1000px);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: 100px;
 }
 
 .list {
@@ -69,21 +63,24 @@ dl {
   gap: 1rem;
 }
 
-.list.ng {
+.ng {
   gap: 0;
 }
 
-.list.vert {
+.vert {
   flex-direction: column;
 }
 
-.list.horiz-sb {
+.horiz-sb {
   justify-content: space-between;
 }
 
-.list.center {
-  text-align: center;
+.content-center {
   align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .display {
