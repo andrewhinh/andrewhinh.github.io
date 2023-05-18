@@ -65,8 +65,8 @@ ul {
 }
 
 .display:hover {
-  transform: scale(2);
-  z-index: 1;
+  transform: scale(1.5);
+  z-index: 10;
 }
 
 .ntm {
