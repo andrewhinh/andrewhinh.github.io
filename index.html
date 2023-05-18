@@ -11,7 +11,7 @@
   <div class="container">
     <div class="text-center">
       <h1>Andrew Hinh</h1>
-      <img class="display" src="./assets/profile.jpg" alt="Profile Picture" />
+      <img class="display pp" src="./assets/profile.jpg" alt="Profile Picture" />
       <figure>
         <blockquote cite="https://www.youtube.com/watch?v=MBRqu0YOH14&vl=en">
           <p>Close your eyes. Count to one. That's how long forever feels.
@@ -25,11 +25,12 @@
       <div class="list horiz-sb">
         <div class="list vert content-center text-center">
           <img class="logo" src="../assets/psci.jpg" alt="Procurement Sciences Logo" />
-          <p class="logo-text">2/2023 - Now</p>
+          <p class="ntm">2/2023 - Now</p>
         </div>
-        <div>
+        <div class="list vert ng">
           <div>
-            <p>Machine Learning Intern at <a href="https://procurementsciences.com/">Procurement Sciences</a></p>
+            <p class="ntm">Machine Learning Intern at <a href="https://procurementsciences.com/">Procurement
+                Sciences</a></p>
             <p>I'm helping to grow a seed-stage GovCon AI startup by working with experienced professionals such as <a
                 href="https://www.linkedin.com/in/jknapp/">John Knapp</a> and <a
                 href="https://www.linkedin.com/in/alexwg/">Dr. Alex Wissner-Gross</a> to build efficient and performant
@@ -43,11 +44,11 @@
       <div class="list horiz-sb">
         <div class="list vert content-center text-center">
           <img class="logo" src="../assets/acm.jpg" alt="ACM Logo" />
-          <p class="logo-text">9/2022 - 5/2023</p>
+          <p class="ntm">9/2022 - 5/2023</p>
         </div>
-        <div>
+        <div class="list vert ng">
           <div>
-            <p>AI Lead (SIG AI) at <a href="https://www.acm.org/">ACM at UC Merced</a></p>
+            <p class="ntm">AI Lead (SIG AI) at <a href="https://www.acm.org/">ACM at UC Merced</a></p>
             <p>
               I partnered with the Data-Centric AI community, Weights and Biases (W&B), shadows under my mentorship,
               and
@@ -83,19 +84,24 @@
       <div class="list horiz-sb">
         <div class="list vert content-center text-center">
           <img class="logo" src="../assets/cachechat.jpg" alt="CacheChat Logo" />
-          <p class="logo-text">4/2023</p>
+          <p>4/2023</p>
         </div>
-        <div>
+        <div class="list vert ng">
           <div>
-            <p>
+            <p class="ntm">
               <a href="https://cachechat.pagekite.me/">CacheChat</a>, a website
               to talk with GPT-3.5 about your data of any form at crazy-fast
               speeds using only Numpy and the OpenAI API.
             </p>
             <p>
-              I built it in two days in preparation for an "Everything GPT"
-              workshop I hosted for the ACM.
+              I built this for two reasons:
             </p>
+            <ol>
+              <li>I wanted to show how easy it is to build tools to interact with GPT-3.5 in novel ways for an
+                "Everything GPT" workshop I hosted for the ACM.</li>
+              <li>I was getting tired of seeing people resort to unnecessary and fancy libraries and embedding storage
+                methods to just call OpenAI at the end of the day.</li>
+            </ol>
           </div>
           <div class="list wrap">
             <video class="display" alt="CacheChat Demo" controls loop muted>
@@ -107,11 +113,11 @@
       <div class="list horiz-sb">
         <div class="list vert content-center text-center">
           <img class="logo" src="../assets/captafied.jpg" alt="Captafied Logo" />
-          <p class="logo-text">12/2022 - 2/2023</p>
+          <p>12/2022 - 2/2023</p>
         </div>
-        <div>
+        <div class="list vert ng">
           <div>
-            <p>
+            <p class="ntm">
               <a href="https://captafied.ngrok.io/">Captafied</a>, a website
               that helps users understand their spreadsheet data without the
               learning curve of data processing and visualization tools such as
@@ -133,11 +139,11 @@
       <div class="list horiz-sb">
         <div class="list vert content-center text-center">
           <img class="logo" src="../assets/admirer.jpg" alt="Admirer Logo" />
-          <p class="logo-text">9/2022 - 11/2022</p>
+          <p>9/2022 - 11/2022</p>
         </div>
-        <div>
+        <div class="list vert ng">
           <div>
-            <p>
+            <p class="ntm">
               <a href="https://admirer.pagekite.me/">Admirer</a>, a website that
               uses webcam feeds to answer open-ended questions requiring outside
               knowledge.
@@ -169,53 +175,51 @@
       <div class="list horiz-sb">
         <div class="list vert content-center text-center">
           <img class="logo" src="../assets/chexray.jpg" alt="CheXRay Logo" />
-          <p class="logo-text">4/2020 - 2/2022</p>
+          <p>4/2020 - 2/2022</p>
         </div>
-        <div class="list vert">
+        <div class="list vert ng">
           <div>
+            <p class="ntm">
+              <a
+                href="https://mybinder.org/v2/gh/andrewhinh/CheXRay-v2/HEAD?urlpath=voila%2Frender%2Fproduction.ipynb?voila-theme=dark">CheXRay</a>,
+              a website that uses chest x-rays to generate detailed diagnoses
+              for patients with lung diseases.
+            </p>
+            <p>
+              I used around eight percent of the training set from the
+              MIMIC-CXR dataset to train two models: a report generation model
+              that achieves a Bleu4 score of 0.0704 and a diagnosis model with
+              a precision of .545 and a recall of .824. As a comparison,
+              <a href="https://bit.ly/3SUP5qA">this contemporary SOTA model</a>
+              which I train as the report generation model uses the entire training set to achieve a Bleu4 score of
+              0.103. The authors use
+              <a href="https://bit.ly/3hXl4Jq">this NLP labeler</a>
+              to achieve a precision of 0.333 and a recall of 0.273. Here's an example of a generated radiologist
+              report:
+            </p>
             <div>
-              <p>
-                <a
-                  href="https://mybinder.org/v2/gh/andrewhinh/CheXRay-v2/HEAD?urlpath=voila%2Frender%2Fproduction.ipynb?voila-theme=dark">CheXRay</a>,
-                a website that uses chest x-rays to generate detailed diagnoses
-                for patients with lung diseases.
-              </p>
-              <p>
-                I used around eight percent of the training set from the
-                MIMIC-CXR dataset to train two models: a report generation model
-                that achieves a Bleu4 score of 0.0704 and a diagnosis model with
-                a precision of .545 and a recall of .824. As a comparison,
-                <a href="https://bit.ly/3SUP5qA">this contemporary SOTA model</a>
-                which I train as the report generation model uses the entire training set to achieve a Bleu4 score of
-                0.103. The authors use
-                <a href="https://bit.ly/3hXl4Jq">this NLP labeler</a>
-                to achieve a precision of 0.333 and a recall of 0.273. Here's an example of a generated radiologist
-                report:
-              </p>
-              <div>
-                <figure>
-                  <blockquote cite="https://github.com/andrewhinh/CheXRay-v2">
-                    <p>
-                      None. The lungs are clear without focal consolidation. No pleural effusion or pneumothorax is
-                      seen.
-                      The
-                      cardiac and mediastinal silhouettes are unremarkable. No acute cardiopulmonary process. Chest
-                      radiograph.
-                      No evidence of pneumonia. Chest radiograph. Chest radiograph. Chest radiograph. No acute
-                      cardiopulmonary
-                      process. Chest radiograph. No evidence of pneumonia. Chest radiograph. Chest radiograph. .
-                    </p>
-                  </blockquote>
-                </figure>
-              </div>
-              <p>
-                Clearly, there's a way to go, but I'm proud of this performance given the limited resources I had at the
-                time.
-              </p>
+              <figure>
+                <blockquote cite="https://github.com/andrewhinh/CheXRay-v2">
+                  <p>
+                    None. The lungs are clear without focal consolidation. No pleural effusion or pneumothorax is
+                    seen.
+                    The
+                    cardiac and mediastinal silhouettes are unremarkable. No acute cardiopulmonary process. Chest
+                    radiograph.
+                    No evidence of pneumonia. Chest radiograph. Chest radiograph. Chest radiograph. No acute
+                    cardiopulmonary
+                    process. Chest radiograph. No evidence of pneumonia. Chest radiograph. Chest radiograph. .
+                  </p>
+                </blockquote>
+              </figure>
             </div>
-            <div class="list wrap">
-              <img class="display" src="../assets/chexray-diagnosis.jpg" alt="CheXRay Diagnosis" />
-            </div>
+            <p>
+              Clearly, there's a way to go, but I'm proud of this performance given the limited resources I had at the
+              time.
+            </p>
+          </div>
+          <div class="list wrap">
+            <img class="display" src="../assets/chexray-diagnosis.jpg" alt="CheXRay Diagnosis" />
           </div>
         </div>
       </div>
