@@ -64,11 +64,6 @@ ul {
   height: 200px;
 }
 
-.display:hover {
-  transform: scale(1.5);
-  z-index: 10;
-}
-
 .ntm {
   margin-top: 0;
 }
