@@ -4,7 +4,7 @@ html {
 
 body {
   color: rgb(25, 25, 25);
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(240, 240, 240);
   font-family: Helvetica sans-serif;
   text-align: left;
 }
@@ -40,6 +40,10 @@ h1 {
 h2 {
   font-size: clamp(1.5rem, -6vw + 6.75rem, 4.5rem);
 }
+.title {
+  font-weight: bold;
+  font-size: clamp(1.25rem, -5vw + 5.625rem, 3.75rem);
+}
 figcaption,
 p,
 a,
@@ -47,7 +51,8 @@ li {
   font-size: clamp(1rem, -4vw + 4.5rem, 3rem);
 }
 .date {
-  font-size: clamp(0.75rem, -2.5vw + 3rem, 2rem);
+  font-style: italic;
+  font-size: clamp(0.75rem, -2.5vw + 2.9375rem, 2rem);
 }
 
 ul {
@@ -98,9 +103,4 @@ ul {
 
 .ng {
   gap: 0;
-}
-
-.title {
-  color: rgb(255, 100, 100);
-  font-weight: bold;
 }
