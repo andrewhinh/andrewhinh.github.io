@@ -6,7 +6,7 @@ body {
   color: rgb(210, 210, 210);
   background-color: rgb(45, 45, 45);
   font-family: Helvetica sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 a {
@@ -42,14 +42,11 @@ h2 {
 figcaption,
 p,
 a,
-li,
-dt,
-dd {
+li {
   font-size: clamp(1rem, -4vw + 4.5rem, 3rem);
 }
 
-ul,
-dl {
+ul {
   text-align: left;
 }
 
@@ -58,13 +55,17 @@ dl {
   width: min(95%, 1000px);
 }
 
+.text-center {
+  text-align: center;
+}
+
+.display {
+  height: 200px;
+}
+
 .list {
   display: flex;
   gap: 1rem;
-}
-
-.ng {
-  gap: 0;
 }
 
 .vert {
@@ -79,20 +80,22 @@ dl {
   align-items: center;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.display {
-  width: 800px;
-  max-height: 600px;
-}
-
 .logo {
-  width: 100px;
-  max-height: 300px;
+  width: 75px;
 }
 
 .logo-text {
   margin-top: 0;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.ng {
+  gap: 0;
+}
+
+.display.phone {
+  height: 400px;
 }
