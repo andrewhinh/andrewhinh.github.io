@@ -27,6 +27,7 @@ img,
 video {
   object-fit: contain;
   flex-shrink: 0;
+  transition: 0.1s;
 }
 
 /* Increasing font for smaller devices:
@@ -60,15 +61,11 @@ ul {
 }
 
 .display {
-  height: 300px;
-}
-
-.display.pp {
   height: 200px;
 }
 
-.display.phone {
-  height: 600px;
+.display:hover {
+  transform: scale(2);
 }
 
 .ntm {
