@@ -85,6 +85,10 @@ ul {
   flex-direction: column;
 }
 
+.vert.big {
+  gap: 2rem;
+}
+
 .horiz-sb {
   justify-content: space-between;
 }
