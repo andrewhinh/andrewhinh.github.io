@@ -5,7 +5,7 @@ html {
 body {
   color: rgb(65, 65, 65);
   background-color: rgb(240, 240, 240);
-  font-family: Helvetica sans-serif;
+  font-family: Helvetica, system-ui, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-align: left;
 }
 
