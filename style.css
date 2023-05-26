@@ -1,3 +1,5 @@
+@import url(https://fonts.google.com/specimen/Montserrat?category=Sans+Serif,Display);
+
 html {
   font-size: 16px;
 }
@@ -5,7 +7,7 @@ html {
 body {
   color: rgb(65, 65, 65);
   background-color: rgb(240, 240, 240);
-  font-family: Helvetica, system-ui, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Montserrat", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-align: left;
 }
 
