@@ -188,10 +188,40 @@
               for patients with lung diseases.
             </p>
             <p>
-              I used around eight percent of the training set from the
-              MIMIC-CXR dataset to train two models: a report generation model
-              that achieves a Bleu4 score of 0.0704 and a diagnosis model with
-              a precision of .545 and a recall of .824. As a comparison,
+              Over the course of four iterations, I built and perfected this website for two reasons:
+            </p>
+            <ol>
+              <li>My family friend, a radiologist at Kaiser Permanente, was curious to see whether AI models could do
+                his job, and I felt the urge to build a superior bot. No hard feelings remain to this day.</li>
+              <li>I felt that this was a great way for me to not only apply what I'd learn in the online courses I took,
+                but also learn how to test ideas in interesting papers for myself.</li>
+            </ol>
+            <p>
+              In my <a href="https://github.com/andrewhinh/covid-pneumonia">first iteration</a>, I wanted to learn Keras
+              and coincidentally stumbled on a chest x-ray disease dataset on Kaggle. I then built an image classifier
+              to determine whether a person's chest x-ray is normal or contains COVID19, viral pneumonia, or bacterial
+              pneumonia.
+            </p>
+            <p>
+              In my <a href="https://github.com/andrewhinh/xray">second iteration</a>, I wanted to explore classifying
+              even more diseases in addition to displaying a confidence level for the predictions. I then built a new
+              image classifier to do just that.
+            </p>
+            <p>
+              In my <a href="https://github.com/andrewhinh/chexray-v1">third iteration</a>, I wanted to apply what I'd
+              learned in the 2020 edition of the fast.ai course and took a different approach to this problem. I decided
+              to train two models: a report generation model based off of <a
+                href="https://arxiv.org/abs/1502.03044">this research paper</a> that generates radiologist
+              reports from the chest x-rays and a diagnosis model based off of <a
+                href="https://forums.fast.ai/t/gradient-blending-for-multi-modal-models-in-progress/75645/12">this
+                forum</a> that summarizes the generated report, the images, and other clinical data into a list of
+              diseases the patient most likely needs to be checked out for.
+            </p>
+            <p>
+              In my <a href="https://github.com/andrewhinh/chexray-v2">last iteration</a>, I used around eight percent
+              of the training set from the MIMIC-CXR dataset to improve the two above-mentioned models. In the end, the
+              report generation model achieved a Bleu4 score of 0.0704 and the diagnosis model achieved a precision of
+              .545 and a recall of .824. As a comparison,
               <a href="https://bit.ly/3SUP5qA">this contemporary SOTA model</a>
               which I train as the report generation model uses the entire training set to achieve a Bleu4 score of
               0.103. The authors use
@@ -201,7 +231,7 @@
             </p>
             <div>
               <figure>
-                <blockquote cite="https://github.com/andrewhinh/CheXRay-v2">
+                <blockquote cite="https://github.com/andrewhinh/CheXRay-v2#chexray-v2">
                   <p>
                     None. The lungs are clear without focal consolidation. No pleural effusion or pneumothorax is
                     seen.
