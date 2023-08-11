@@ -1,3 +1,136 @@
+@import url(https://fonts.google.com/specimen/Indie+Flower?category=Handwriting);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom CSS */
 @import url(https://fonts.google.com/specimen/Montserrat?category=Sans+Serif,Display);
 
 html {
@@ -7,8 +140,41 @@ html {
 body {
   color: rgb(65, 65, 65);
   background-color: rgb(240, 240, 240);
-  font-family: "Montserrat", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Montserrat", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-align: left;
+}
+
+header,
+main,
+footer {
+  width: min(95%, 1000px);
+  margin: 100px auto; /* margin collapse -> give both same margin */
+}
+
+header,
+main,
+footer,
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+main,
+footer {
+  gap: 2rem;
+}
+
+div {
+  gap: 1rem;
+}
+
+
+h1,
+h2,
+.title {
+  font-weight: bold;
 }
 
 a {
@@ -26,9 +192,39 @@ a:hover {
 }
 
 img,
-video {
+video,
+iframe {
   object-fit: contain;
-  flex-shrink: 0;
+  height: 200px;
+  width: auto;
+}
+
+blockquote,
+em,
+.date {
+  font-style: italic;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol,
+ul {
+  text-align: left;
+}
+
+blockquote,
+ul {
+  margin-left: 2rem;
+}
+
+ol {
+  margin-left: .5rem;
 }
 
 /* Increasing font for smaller devices:
@@ -42,70 +238,53 @@ h2 {
   font-size: clamp(1.5rem, -6vw + 6.75rem, 4.5rem);
 }
 .title {
-  font-weight: bold;
   font-size: clamp(1.25rem, -5vw + 5.625rem, 3.75rem);
 }
 figcaption,
 p,
 a,
-li {
+li,
+blockquote {
   font-size: clamp(1rem, -4vw + 4.5rem, 3rem);
 }
 .date {
-  font-style: italic;
   font-size: clamp(0.75rem, -2.5vw + 2.9375rem, 2rem);
 }
 
-ul {
-  text-align: left;
-}
-
-.container {
-  margin: 100px auto;
-  width: min(95%, 1000px);
-}
-
-.text-center {
+.tc {
   text-align: center;
 }
 
-.display {
-  height: 200px;
-}
-
-.ntm {
-  margin-top: 0;
-}
-
-.list {
-  display: flex;
-  gap: 1rem;
-}
-
-.vert {
-  flex-direction: column;
-}
-
-.vert.big {
-  gap: 2rem;
-}
-
-.horiz-sb {
-  justify-content: space-between;
-}
-
-.content-center {
+.ac {
   align-items: center;
 }
 
 .logo {
-  width: 75px;
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+}
+
+.horiz {
+  flex-direction: row;
+}
+
+.jc {
+  justify-content: center;
 }
 
 .wrap {
   flex-wrap: wrap;
 }
 
-.ng {
-  gap: 0;
+.nlm {
+  margin-left: 0;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.ntm {
+  margin-top: 0;
 }
