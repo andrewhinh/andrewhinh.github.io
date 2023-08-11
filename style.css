@@ -147,13 +147,6 @@ body {
 
 header,
 main,
-footer {
-  width: min(95%, 1000px);
-  margin: 100px auto; /* margin collapse -> give both same margin */
-}
-
-header,
-main,
 footer,
 div {
   display: flex;
@@ -163,6 +156,8 @@ div {
 header,
 main,
 footer {
+  width: min(90%, 1000px);
+  margin: 100px auto; /* margin collapse -> give both same margin */
   gap: 2rem;
 }
 
@@ -170,10 +165,41 @@ div {
   gap: 1rem;
 }
 
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+}
+
+figcaption,
+p,
+a,
+li,
+blockquote {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.date {
+  font-size: 0.75rem;
+}
+
 h1,
 h2,
 .title {
   font-weight: bold;
+}
+
+blockquote,
+em,
+.date {
+  font-style: italic;
 }
 
 a {
@@ -196,20 +222,7 @@ iframe {
   object-fit: contain;
   height: 200px;
   width: auto;
-}
-
-blockquote,
-em,
-.date {
-  font-style: italic;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ul {
-  list-style-type: disc;
+  max-width: min(90%, 1000px);
 }
 
 ol,
@@ -223,32 +236,12 @@ ul {
 }
 
 ol {
+  list-style-type: decimal;
   margin-left: 0.5rem;
 }
 
-/* Increasing font for smaller devices:
-- https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/#calculating-preferred-value-parameters-based-on-specific-starting-and-ending-points
-- https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/#using-negative-viewport-value-for-fluid-sizing
-*/
-h1 {
-  font-size: clamp(1.8rem, -7.2vw + 8.1rem, 5.4rem);
-}
-h2 {
-  font-size: clamp(1.5rem, -6vw + 6.75rem, 4.5rem);
-}
-.title {
-  font-size: clamp(1.25rem, -5vw + 5.625rem, 3.75rem);
-}
-figcaption,
-p,
-a,
-li,
-blockquote {
-  line-height: 1.5rem;
-  font-size: clamp(1rem, -4vw + 4.5rem, 3rem);
-}
-.date {
-  font-size: clamp(0.75rem, -2.5vw + 2.9375rem, 2rem);
+ul {
+  list-style-type: disc;
 }
 
 .tc {
