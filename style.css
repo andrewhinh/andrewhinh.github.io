@@ -170,7 +170,6 @@ div {
   gap: 1rem;
 }
 
-
 h1,
 h2,
 .title {
@@ -187,7 +186,7 @@ a:visited {
 }
 
 a:hover {
-  color: rgb(148, 185, 253);
+  opacity: 0.5;
   transition: 0.1s;
 }
 
@@ -224,7 +223,7 @@ ul {
 }
 
 ol {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 /* Increasing font for smaller devices:
@@ -245,6 +244,7 @@ p,
 a,
 li,
 blockquote {
+  line-height: 1.5rem;
   font-size: clamp(1rem, -4vw + 4.5rem, 3rem);
 }
 .date {
