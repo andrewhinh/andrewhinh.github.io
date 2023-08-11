@@ -157,8 +157,19 @@ header,
 main,
 footer {
   width: min(90%, 1000px);
-  margin: 100px auto; /* margin collapse -> give both same margin */
   gap: 2rem;
+}
+
+header {
+  margin: 6rem auto 4.5rem;
+}
+
+main {
+  margin: 3rem auto;
+}
+
+footer {
+  margin: 4.5rem auto 6rem;
 }
 
 div {
@@ -181,6 +192,7 @@ figcaption,
 p,
 a,
 li,
+input,
 blockquote {
   line-height: 1.5rem;
   font-size: 1rem;
@@ -211,16 +223,28 @@ a:visited {
   color: rgb(52, 129, 253);
 }
 
-a:hover {
+a:hover,
+button:hover {
   opacity: 0.5;
   transition: 0.1s;
+  cursor: pointer;
+}
+
+button {
+  border-width: 0;
+}
+
+.icon {
+  width: 2rem;
+  height: auto;
+  object-fit: contain;
 }
 
 img,
 video,
 iframe {
   object-fit: contain;
-  height: 200px;
+  height: 12rem;
   width: auto;
   max-width: min(90%, 1000px);
 }
@@ -253,7 +277,7 @@ ul {
 }
 
 .logo {
-  width: 50px;
+  width: 3rem;
   height: auto;
   object-fit: contain;
 }
