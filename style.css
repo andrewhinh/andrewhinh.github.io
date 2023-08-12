@@ -218,6 +218,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  border-width: 0;
+  background-color: transparent;
+}
+
 a:link,
 a:visited {
   color: rgb(52, 129, 253);
@@ -228,10 +233,6 @@ button:hover {
   opacity: 0.5;
   transition: 0.1s;
   cursor: pointer;
-}
-
-button {
-  border-width: 0;
 }
 
 .icon {
