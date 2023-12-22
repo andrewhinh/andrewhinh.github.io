@@ -145,30 +145,45 @@ body {
   text-align: left;
 }
 
+nav,
 header,
 main,
-footer,
 div {
   display: flex;
+}
+
+header,
+main,
+div {
   flex-direction: column;
 }
 
+nav,
 header,
-main,
-footer {
+main {
   width: min(90%, 1000px);
+}
+
+.nav,
+header,
+main {
   gap: 2rem;
 }
 
-header {
-  margin: 6rem auto 4.5rem;
+.book {
+  width: min(90%, 800px);
+  margin: 0 auto;
 }
 
-main {
+nav {
   margin: 3rem auto;
 }
 
-footer {
+header {
+  margin: 4.5rem auto;
+}
+
+main {
   margin: 4.5rem auto 6rem;
 }
 
@@ -305,6 +320,18 @@ ul {
   justify-content: center;
 }
 
+.sb {
+  justify-content: space-between;
+}
+
+.js {
+  justify-content: flex-start;
+}
+
+.je {
+  justify-content: flex-end;
+}
+
 .wrap {
   flex-wrap: wrap;
 }
@@ -325,10 +352,6 @@ ul {
   width: 6rem;
   height: auto;
   object-fit: contain;
-}
-
-.sb {
-  justify-content: space-between;
 }
 
 .ntm {
