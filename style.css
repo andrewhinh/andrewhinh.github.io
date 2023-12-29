@@ -291,13 +291,13 @@ ul {
 }
 
 blockquote,
+ol,
 ul {
   margin-left: 2rem;
 }
 
 ol {
   list-style-type: decimal;
-  margin-left: 0.5rem;
 }
 
 ul {
