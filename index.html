@@ -170,21 +170,16 @@
             <a class="title" href="https://www.edlight.com/">Edlight</a>
           </p>
           <p>
-            Utilizing fine-tuned VLMs trained on self-annotated data to improve
-            the Annotation Model, an AI-powered grading tool for images of
-            student work, in collaboration with the Senior Director of Learning
-            Engineering.
-          </p>
-          <p>
-            Built a multi-step Qwen2-VL-7B-powered API for automatically
-            matching assignments to IEP goals that won the end-of-year week-long
-            hackathon and became the biggest product release for the company in
-            Q1.
+            Built an assignment image to IEP goals matching system utilizing a
+            multi-step Qwen2-VL-7B-Instruct-powered API that won the end-of-year
+            week-long hackathon and became the biggest product release for the
+            company in Q1.
           </p>
           <p>
             Encouraged leadership to adopt the usage of Modal and W&B to reduce
             GPU costs and improve experiment management, leading to a $5000
-            grant from Modal and much better infrastructure.
+            grant from Modal and all artifacts (datasets, models) being shared
+            via W&B.
           </p>
           <div class="horiz wrap">
             <img
@@ -244,13 +239,10 @@
             <a class="title" href="https://www.acm.org/">ACM at UC Merced</a>
           </p>
           <p>
-            Conducted workshops and hackathons with experts such as Fabiana
-            Clemente of YData, Andrea Parker of W&B, and Charles Frye of FSDL,
-            covering AI fundamentals to advanced industry tools.
-          </p>
-          <p>
-            Mentored three peers aiming for leadership roles by guiding them
-            through a final project and presentation in the fall.
+            Led club-wide projects and conducted workshops and hackathons with
+            experts such as Fabiana Clemente of YData, Andrea Parker of W&B, and
+            Charles Frye of FSDL, covering AI fundamentals to advanced industry
+            tools.
           </p>
           <div class="horiz wrap">
             <img src="../assets/acm-workshop.jpg" alt="ACM Workshop Picture" />
@@ -264,25 +256,60 @@
       <h2>Main Projects</h2>
       <div class="horiz ntm">
         <div class="tc ac">
-          <img class="logo" src="../assets/formless.jpg" alt="Formless Logo" />
-          <p class="date">9/24 - Present</p>
+          <img class="logo" src="../assets/mhf.png" alt="MHF Logo" />
+          <p class="date">1/25 - 3/25</p>
         </div>
         <div>
           <p>
-            <a class="title" href="https://bit.ly/formless-fe">Formless</a>, an
-            open-source service to convert unstructured handwritten text and
-            images into structured data with extremely high precision and
-            accuracy using fine-tuned multi-modal LLMs.
+            Created an
+            <a class="title" href="https://bit.ly/mhf-winter-2025"
+              >automated ultrasound substructure localization system</a
+            >
+            utilizing a fine-tuned Qwen2.5-VL-3B-Instruct that reduces Hausdorff
+            distance by 57.65% and Euclidean distance by 31.72% compared to the
+            base model.
           </p>
           <p>
-            Prompted while working at EdLight because of the poor quality of
-            existing solutions such as Mathpix for work containing messy
-            handwriting
+            ETL, evaluation, and model quantization/training alongside an API
+            and website completed and served for under $2.
+          </p>
+        </div>
+      </div>
+      <div class="horiz ntm">
+        <div class="tc ac">
+          <img
+            class="logo"
+            src="../assets/flash-attn.png"
+            alt="Flash Attention Logo"
+          />
+          <p class="date">12/24 - 1/25</p>
+        </div>
+        <div>
+          <p>
+            An implementation of
+            <a class="title" href="https://bit.ly/flash-attn"
+              >Flash Attention</a
+            >
+            in CUDA alongside a website to visualize its effect on input
+            embeddings.
+          </p>
+        </div>
+      </div>
+      <div class="horiz ntm">
+        <div class="tc ac">
+          <img class="logo" src="../assets/formless.jpg" alt="Formless Logo" />
+          <p class="date">9/24 - 3/25</p>
+        </div>
+        <div>
+          <p>
+            <a class="title" href="https://bit.ly/formless-fe">Formless</a>, a
+            hard handwriting image OCR system served via a public API, website,
+            and PyPI package utilizing a fine-tuned Qwen2-VL-7B-Instruct.
           </p>
           <p>
-            Utilizing FineWeb-inspired data quality filtering and stratified
-            deduplication alongside SFT and DPO on manually annotated
-            worst-performing samples to improve VLM outputs.
+            Used FineWeb-inspired data quality filtering and stratified
+            deduplication alongside SFT and DPO on worst-performing samples to
+            reduce character error rate compared to the base model.
           </p>
         </div>
       </div>
@@ -299,9 +326,8 @@
           </p>
           <p>
             Built so I could learn full-stack development using React.js,
-            Next.js, FastAPI, PostgreSQL, and SQLModel.
+            Next.js, TailwindCSS, FastAPI, PostgreSQL, and SQLModel.
           </p>
-          <p>Takeaway: front-end development is messy...</p>
           <div class="horiz wrap">
             <img src="../assets/dilemma-home.jpg" alt="Dilemma Homepage" />
           </div>
@@ -341,11 +367,11 @@
         <div>
           <p>
             <a class="title" href="https://www.admirer.ajhinh.com/">Admirer</a>,
-            a website that
+            a CLIP + GPT-2-based VLM
             <span class="title"
-              >uses webcam feeds to answer open-ended questions</span
+              >built and served nearly two years before any major provider
+              release.</span
             >
-            requiring outside knowledge.
           </p>
           <p>
             Highlighted as a top FSDL 2022 project among industry professionals
