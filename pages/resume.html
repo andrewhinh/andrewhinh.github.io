@@ -343,31 +343,99 @@
               controller for the best experience.
             </li>
             <li>
-              Added examples to the
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://modal.com/docs/examples"
-                >docs</a
-              >
-              such as
+              Added examples to the docs such as running high-throughput LLM
+              inference with
               <a
                 class="underline hover:text-zinc-900"
                 href="https://modal.com/docs/examples/tokasaurus_throughput#high-throughput-llm-inference-with-tokasaurus-llama-32-1b-instruct"
-                >high-throughput LLM inference with Tokasaurus</a
-              >,
+                >Tokasaurus</a
+              >, editing images with
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://modal.com/docs/examples/image_to_image"
+                >Flux Kontext</a
+              >, streaming transcriptions with
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://modal.com/docs/examples/streaming_kyutai_stt"
+                >Kyutai STT</a
+              >, running
               <a
                 class="underline hover:text-zinc-900"
                 href="https://github.com/modal-labs/modal-examples/blob/main/misc/trtllm_deepseek.py"
-                >running DeepSeek-R1 on Blackwell GPUs using TensorRT-LLM</a
-              >, and
+                >DeepSeek-R1 on Blackwell GPUs</a
+              >
+              using TensorRT-LLM, and connecting to a GPU-powered container over
               <a
                 class="underline hover:text-zinc-900"
                 href="https://github.com/modal-labs/modal-examples/tree/main/misc/quic"
-                >connecting to a GPU-powered container over QUIC</a
+                >QUIC</a
               >. I also updated various other examples to use the latest
               tooling, models, and best practices.
             </li>
           </ul>
+          <div
+            class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4"
+          >
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">
+                Tokasaurus, the &quot;little LLM engine that could&quot; by
+                <a href="https://twitter.com/jordanjuravsky?ref_src=twsrc%5Etfw"
+                  >@jordanjuravsky</a
+                >
+                and
+                <a href="https://twitter.com/EyubogluSabri?ref_src=twsrc%5Etfw"
+                  >@EyubogluSabri</a
+                >
+                of
+                <a href="https://twitter.com/HazyResearch?ref_src=twsrc%5Etfw"
+                  >@HazyResearch</a
+                >/<a
+                  href="https://twitter.com/ScalingIntelLab?ref_src=twsrc%5Etfw"
+                  >@ScalingIntelLab</a
+                >, is capable of some pretty impressive perf.<br /><br />We
+                replicated their report of &gt;80k tok/s for 16bit LLaMA 3.1 8B
+                on Large Language Monkeys GSM8K - and you can too!
+                <a href="https://t.co/lLwodN2v5H">pic.twitter.com/lLwodN2v5H</a>
+              </p>
+              &mdash; Charles 🎉 Frye (@charles_irl)
+              <a
+                href="https://twitter.com/charles_irl/status/1947425937064353959?ref_src=twsrc%5Etfw"
+                >July 21, 2025</a
+              >
+            </blockquote>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">
+                Ghiblification has been achieved externally!<a
+                  href="https://twitter.com/bfl_ml?ref_src=twsrc%5Etfw"
+                  >@bfl_ml</a
+                >&#39;s new weights-available Flux Kontext model adds
+                image-to-image capabilities.<br /><br />Run it on B200s with
+                Modal whenever ChatGPT&#39;s image gen is too slow for you.
+                <a href="https://t.co/me7LsNd8Ev">pic.twitter.com/me7LsNd8Ev</a>
+              </p>
+              &mdash; Charles 🎉 Frye (@charles_irl)
+              <a
+                href="https://twitter.com/charles_irl/status/1939691814040350895?ref_src=twsrc%5Etfw"
+                >June 30, 2025</a
+              >
+            </blockquote>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+            <img
+              class="w-auto object-cover"
+              src="../assets/modal-linkedin.png"
+              alt="Modal LinkedIn Post - National Intern Day"
+            />
+          </div>
         </div>
         <div class="w-full flex flex-col justify-center items-start gap-2">
           <p class="text-xl font-medium">
