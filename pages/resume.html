@@ -15,12 +15,12 @@
   <body
     class="flex flex-col justify-center items-center gap-16 p-8 md:p-24 text-zinc-600 bg-stone-200 font-['Montserrat',system-ui,'Segoe_UI',Roboto,Helvetica,Arial,sans-serif,'Apple_Color_Emoji','Segoe_UI_Emoji','Segoe_UI_Symbol']"
   >
-    <nav class="w-full flex justify-between items-center text-2xl font-medium">
-      <div>
-        <a href="../index.html" class="hover:text-zinc-900">
-          Andrew Hinh &mdash; Resume
-        </a>
-      </div>
+    <nav
+      class="w-full flex justify-between items-center gap-4 text-2xl font-medium"
+    >
+      <a href="../index.html" class="hover:text-zinc-900">
+        Andrew Hinh &mdash; Resume
+      </a>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <a href="./resume.html" class="hover:text-zinc-900"> resume </a>
         <a href="./misc.html" class="hover:text-zinc-900"> misc </a>
@@ -29,11 +29,20 @@
     <main
       class="w-full md:w-2/3 leading-8 flex flex-col justify-center items-start gap-16"
     >
+      <div class="text-md">
+        Click
+        <a
+          href="https://docs.google.com/document/d/1Eao-6uXCn0pmGbvg-3dvYUw5ARHAVuvDvsPILX3D3jo/edit?usp=sharing"
+          class="underline hover:text-zinc-900"
+          >here</a
+        >
+        to view the standardized document.
+      </div>
       <div class="w-full flex flex-col justify-center items-start gap-8">
         <h1 class="text-2xl font-semibold">Education</h1>
         <div class="w-full flex flex-col justify-center items-start gap-2">
           <p class="text-xl font-medium">Santa Clara University</p>
-          <div class="w-full flex justify-between items-center">
+          <div class="w-full flex justify-between items-center gap-4">
             <p class="text-md italic">
               B.S. in Computer Science and Engineering
             </p>
@@ -70,7 +79,7 @@
         </div>
         <div class="w-full flex flex-col justify-center items-start gap-2">
           <p class="text-xl font-medium">University of California, Merced</p>
-          <div class="w-full flex justify-between items-center">
+          <div class="w-full flex justify-between items-center gap-4">
             <p class="text-md italic">B.S. in Computer Science</p>
             <p class="text-md italic">2022 - 2023</p>
           </div>
@@ -178,12 +187,12 @@
               class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4"
             >
               <img
-                class="w-auto h-64 object-cover"
+                class="max-h-[40rem] max-w-full"
                 src="../assets/fsdl_2022_certificate.png"
                 alt="FSDL 2022 Certificate of Completion"
               />
               <iframe
-                class="-ml-4 my-4 md:m-0 md:p-4 w-auto h-64 object-cover"
+                class="h-[28rem] w-[21rem] md:h-[40rem] md:w-[30rem]"
                 src="https://docs.google.com/gview?url=https://drive.google.com/uc?id=18zH_oYVGMNlnOg24igHcawigCJMs6ERK&embedded=true"
                 alt="Charles Frye's Recommendation Letter"
               ></iframe>
@@ -314,7 +323,7 @@
               >Modal</a
             >
           </p>
-          <div class="w-full flex justify-between items-center">
+          <div class="w-full flex justify-between items-center gap-4">
             <p class="text-md italic">June - August 2025</p>
             <p class="text-md italic">San Francisco, CA / New York, NY</p>
           </div>
@@ -328,13 +337,13 @@
               >
               against an RL-trained LLM in a sandboxed game engine to promote
               Modal sandboxes and their use for RL rollouts and LLMs. A live
-              demo at
+              demo is available at
               <a
                 class="underline hover:text-zinc-900"
                 href="https://sf3.modal.dev"
                 >sf3.modal.dev</a
               >
-              is available. I'd recommend the
+              . I'd recommend the
               <a
                 class="underline hover:text-zinc-900"
                 href="https://www.amazon.com/GameSir-Wireless-Controller-Bluetooth-Vibration/dp/B0CMCQ6WMC"
@@ -343,7 +352,7 @@
               controller for the best experience.
             </li>
             <li>
-              Added examples to the docs such as running high-throughput LLM
+              Added examples to the docs, including running high-throughput LLM
               inference with
               <a
                 class="underline hover:text-zinc-900"
@@ -431,7 +440,7 @@
               charset="utf-8"
             ></script>
             <img
-              class="w-auto object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/modal-linkedin.png"
               alt="Modal LinkedIn Post - National Intern Day"
             />
@@ -446,7 +455,7 @@
               >Edlight</a
             >
           </p>
-          <div class="w-full flex justify-between items-center">
+          <div class="w-full flex justify-between items-center gap-4">
             <p class="text-md italic">April 2024 - February 2025</p>
             <p class="text-md italic">Remote</p>
           </div>
@@ -468,22 +477,22 @@
             class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4"
           >
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/edlight-cert-1.png"
               alt="Edlight Certificate 1"
             />
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/edlight-cert-2.png"
               alt="Edlight Certificate 2"
             />
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/edlight-cert-3.png"
               alt="Edlight Certificate 3"
             />
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/edlight-cert-4.png"
               alt="Edlight Certificate 4"
             />
@@ -498,7 +507,7 @@
               >Procurement Sciences</a
             >
           </p>
-          <div class="w-full flex justify-between items-center">
+          <div class="w-full flex justify-between items-center gap-4">
             <p class="text-md italic">February - October 2023</p>
             <p class="text-md italic">Remote</p>
           </div>
@@ -507,13 +516,13 @@
               Led and contributed to 10+ core LLM/RAG projects (Resource
               Uploader, Web Scraper, Opportunity Search, Intellibid Proposal
               Writer, AI Chats) as the first ML engineer, helping to expand the
-              customer base from 10 to 25 organizations (60 to 150 users) which
+              customer base from 10 to 25 organizations (60 to 150 users), which
               led to an ARR increase from $86k to $350k.
             </li>
           </ul>
           <div class="p-4">
             <iframe
-              class="-ml-4 my-4 md:m-0 md:p-4 w-auto h-64 object-cover"
+              class="h-[28rem] w-[21rem] md:h-[40rem] md:w-[30rem]"
               src="https://docs.google.com/gview?url=https://drive.google.com/uc?id=1ma0W37C7YRUqkuCN_Vu9CZ7a394lEm4d&embedded=true"
               alt="John Knapp's Recommendation Letter"
             ></iframe>
@@ -526,7 +535,7 @@
               >Association for Computing Machinery</a
             >
           </p>
-          <div class="w-full flex justify-between items-center">
+          <div class="w-full flex justify-between items-center gap-4">
             <p class="text-md italic">September 2022 - May 2023</p>
             <p class="text-md italic">Merced, CA</p>
           </div>
@@ -542,12 +551,12 @@
             class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4"
           >
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/acm-workshop.jpg"
               alt="ACM Workshop Picture"
             />
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/acm-leadership.jpg"
               alt="ACM Leadership Picture"
             />
@@ -649,7 +658,7 @@
           </p>
           <div class="p-4">
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/mhf-demo.jpeg"
               alt="MHF Demo"
             />
@@ -677,7 +686,7 @@
           </p>
           <div class="p-4">
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/flash-attn-demo.jpeg"
               alt="Flash Attention Demo"
             />
@@ -720,7 +729,7 @@
           </p>
           <div class="p-4">
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/formless-demo.jpeg"
               alt="Formless Demo"
             />
@@ -744,7 +753,7 @@
           </p>
           <div class="p-4">
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/dilemma-demo.jpg"
               alt="Dilemma Demo"
             />
@@ -771,7 +780,7 @@
           </p>
           <div class="p-4">
             <video
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               alt="Captafied Demo"
               controls
               loop
@@ -822,12 +831,12 @@
             class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4"
           >
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/admirer-demo.jpg"
               alt="Admirer Demo"
             />
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/admirer-pipeline.jpg"
               alt="Admirer Pipeline"
             />
@@ -934,12 +943,12 @@
             class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4"
           >
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/chexray-report.jpg"
               alt="CheXRay Report"
             />
             <img
-              class="w-auto h-64 object-cover"
+              class="max-h-[40rem] max-w-full"
               src="../assets/chexray-scan.jpg"
               alt="CheXRay Scan"
             />
