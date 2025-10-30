@@ -10,140 +10,23 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+    <link rel="stylesheet" href="./styles/animations.css" />
     <style>
-      /* Smooth transitions for all elements */
-      * {
-        transition-timing-function: ease-in-out;
-      }
-
-      /* Fade in on page load */
+      /* Page-specific animations using Tailwind utilities */
       body {
         animation: fadeIn 0.5s ease-in;
       }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-
-      /* Smooth hover transitions */
-      a, button {
-        transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-      }
-
-      /* Toast notification fade animations */
-      #copy-toast {
-        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-      }
-
-      #copy-toast:not(.hidden) {
-        animation: slideDown 0.3s ease-out;
-      }
-
-      @keyframes slideDown {
-        from {
-          opacity: 0;
-          transform: translate(-50%, -20px);
-        }
-        to {
-          opacity: 1;
-          transform: translate(-50%, 0);
-        }
-      }
-
-      /* Smooth image loading */
-      img {
-        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-      }
-
-      img:hover {
-        transform: scale(1.02);
-      }
-
-      /* HTMX swap animations */
-      .htmx-swapping {
-        opacity: 0;
-        transition: opacity 0.3s ease-out;
-      }
-
-      .htmx-added {
-        opacity: 0;
-      }
-
-      .htmx-added.htmx-settling {
-        opacity: 1;
-        transition: opacity 0.5s ease-in;
-      }
-
-      /* Smooth list item animations */
-      li {
-        transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
-      }
-
-      li:hover {
-        transform: translateX(4px);
-      }
-
-      /* Smooth header animation */
-      header {
-        animation: slideUp 0.6s ease-out;
-      }
-
-      @keyframes slideUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      /* Smooth navigation animation */
+      
       nav {
         animation: fadeInDown 0.4s ease-out;
       }
-
-      @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          transform: translateY(-10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+      
+      header {
+        animation: slideUp 0.6s ease-out;
       }
-
-      /* Smooth main content animation */
+      
       main {
         animation: fadeInUp 0.8s ease-out;
-      }
-
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      /* Profile image hover effect */
-      header img {
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-      }
-
-      header img:hover {
-        transform: scale(1.05);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
       }
     </style>
   </head>
@@ -153,7 +36,7 @@
   >
     <div
       id="copy-toast"
-      class="fixed top-4 left-1/2 -translate-x-1/2 min-h-12 w-2/3 md:w-1/5 bg-green-600 text-xl text-zinc-200 text-center p-3 rounded-lg shadow-lg hidden"
+      class="fixed top-4 left-1/2 -translate-x-1/2 min-h-12 w-2/3 md:w-1/5 bg-green-600 text-xl text-zinc-200 text-center p-3 rounded-lg shadow-lg hidden transition-all duration-300"
       role="alert"
     >
       Copied to clipboard!
@@ -172,7 +55,7 @@
         <img
           src="./assets/profile.jpg"
           alt="Profile Picture"
-          class="w-40 h-48 md:w-64 md:h-80 rounded-full"
+          class="w-40 h-48 md:w-64 md:h-80 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_30px_rgba(0,0,0,0.2)]"
         />
       </div>
       <div class="p-8 flex justify-center items-center gap-4 md:gap-8">
