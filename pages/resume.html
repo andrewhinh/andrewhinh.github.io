@@ -573,10 +573,22 @@
         <h1 class="text-2xl font-semibold">Projects</h1>
         <div class="w-full flex flex-col justify-center items-start gap-2">
           <p class="text-xl font-medium">Web OS</p>
-          <p class="text-md italic">September 2025 - Present</p>
+          <p class="text-md italic">September 2025 - January 2026</p>
           <p class="text-md">
              A UNIX-like Rust OS built for RISC-V, available on the web.
           </p>
+          <p class="text-md">Features include:</p>
+          <ul class="list-disc list-inside text-md pl-4">
+            <li>COW fork, mmap, and kernel threads.</li>
+            <li>Async kernel executor that handles UART/disk/network I/O cooperatively without blocking CPUs in addition to the preemptive user scheduler.</li>
+            <li>APLIC/MSI interrupts for per-hart message-signaled delivery, replacing PLIC.</li>
+            <li>Signals with interval timers, job control, and poll/select.</li>
+            <li>IPC including shared memory and AF_UNIX sockets.</li>
+            <li>Journaling filesystem with fsync, crash recovery, symlinks, and permissions.</li>
+            <li>TCP/UDP networking over virtio-net.</li>
+            <li>Framebuffer with UTF-8/ANSI support and keyboard/mouse input.</li>
+            <li>Web UI that streams the framebuffer via VNC over WebRTC.</li>
+          </ul>
           <p class="text-md font-medium">
             Links:
             <a
