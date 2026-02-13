@@ -1,999 +1,729 @@
 <!doctype html>
 <html lang="en" font-size="16px">
-  <head>
-    <meta
-      charset="utf-8"
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no""
+
+<head>
+  <meta charset="utf-8" name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no""
     />
     <title>andrew hinh | resume</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link
-      rel="prefetch"
-      href="../assets/fsdl_2022_certificate.png"
-      as="image"
-    />
-    <link rel="prefetch" href="../assets/modal-linkedin.png" as="image" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
-  </head>
+    <link rel=" shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="prefetch" href="../assets/fsdl_2022_certificate.png" as="image" />
+  <link rel="prefetch" href="../assets/modal-linkedin.png" as="image" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+</head>
 
-  <body
-    class="flex flex-col justify-center items-center gap-16 p-8 md:p-24 text-zinc-600 bg-stone-200 font-['Montserrat',system-ui,'Segoe_UI',Roboto,Helvetica,Arial,sans-serif,'Apple_Color_Emoji','Segoe_UI_Emoji','Segoe_UI_Symbol']"
-  >
-    <nav
-      class="w-full flex justify-between items-center gap-4 text-2xl font-medium"
-    >
-      <a href="../index.html" class="hover:text-zinc-900">
-        Andrew Hinh &mdash; Resume
-      </a>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <a href="./resume.html" class="hover:text-zinc-900"> resume </a>
-        <a href="./misc.html" class="hover:text-zinc-900"> misc </a>
-      </div>
-    </nav>
-    <main
-      class="w-full md:w-2/3 leading-8 flex flex-col justify-center items-start gap-16"
-    >
-      <div class="text-md">
-        Click
-        <a
-          href="https://docs.google.com/document/d/1Eao-6uXCn0pmGbvg-3dvYUw5ARHAVuvDvsPILX3D3jo/edit?usp=sharing"
-          class="underline hover:text-zinc-900"
-          >here</a
-        >
-        to view the standardized document.
-      </div>
-      <div class="w-full flex flex-col justify-center items-start gap-8">
-        <h1 class="text-2xl font-semibold">Education</h1>
-        <div class="w-full flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">Santa Clara University</p>
-          <div class="w-full flex justify-between items-center gap-4">
-            <p class="text-md italic">
-              B.S. in Computer Science and Engineering
-            </p>
-            <p class="text-md italic">2023 - 2026</p>
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-start gap-2">
-          <p class="text-lg font-medium">Technical Courses</p>
-          <ul class="list-disc list-inside text-md">
-            <li>Introduction to Formal Language Theory and Compiler Construction (CSEN 175)</li>
-            <li>Operating Systems (CSEN 177)</li>
-            <li>Computer Architecture (CSEN 122)</li>
-            <li>
-              Principles of Design and Implementation of Programming Languages
-              (CSEN 171)
-            </li>
-            <li>Digital Integrated Circuit Design (ECEN 153)</li>
-            <li>Computer Networks (CSEN 146)</li>
-            <li>Software Engineering (CSEN 174)</li>
-            <li>Machine Learning and Data Mining (CSEN 140)</li>
-            <li>
-              Object-Oriented Programming and Advanced Data Structures (CSEN 79)
-            </li>
-            <li>Web Information Management (CSEN 169)</li>
-            <li>Introduction to Logic Design (ECEN 21)</li>
-            <li>Electric Circuits I (ECEN 50)</li>
-            <li>Introduction to Embedded Systems (CSEN 20)</li>
-            <li>Linear Algebra (MATH 53)</li>
-            <li>Theory of Automata and Languages (CSCI 161)</li>
-            <li>Advanced Programming (CSCI 62)</li>
-            <li>Probability and Statistics II (MATH 123)</li>
-            <li>Theory of Algorithms (CSCI 163)</li>
-            <li>Data Structures (CSCI 61)</li>
-            <li>Probability and Statistics I (MATH 122)</li>
-            <li>Discrete Mathematics (MATH 51)</li>
-          </ul>
-        </div>
-        <div class="w-full flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">University of California, Merced</p>
-          <div class="w-full flex justify-between items-center gap-4">
-            <p class="text-md italic">B.S. in Computer Science</p>
-            <p class="text-md italic">2022 - 2023</p>
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-start gap-2">
-          <p class="text-lg font-medium">Technical Courses</p>
-          <ul class="list-disc list-inside text-md">
-            <li>Vector Calculus (MATH 023)</li>
-            <li>Introductory Physics I for Physical Sciences (PHYS 008)</li>
-            <li>Introductory Physics II for Physical Sciences (PHYS 009)</li>
-            <li>Advanced Programming (CSE 024)</li>
-          </ul>
-        </div>
-        <div class="flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">Misc</p>
-          <ul class="list-disc list-inside text-md [&_ul]:list-[revert]">
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.youtube.com/watch?v=o7h_sYMk_oc&list=PLUl4u3cNGP63VIBQVWguXxZZi0566y7Wf"
-              >
-                MIT 6.172 Performance Engineering of Software Systems, Fall 2018
-              </a>
-              by Charles Leiserson
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ"
-              >
-                DeepMind X UCL | Introduction to Reinforcement Learning 2015
-              </a>
-              by David Silver
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.youtube.com/watch?v=4pkbXmE4POc&list=PLRRuQYjFhpmubuwx-w8X964ofVkW1T8O4"
-              >
-                Programming Massively Parallel Processors: A Hands-on Approach
-              </a>
-              by Wen-mei W. Hwu, David B. Kirk, and Izzat El Hajj
-            </li>
-            <ul class="list-disc list-inside pl-4 py-2">
-              <li>
-                <a
-                  class="underline hover:text-zinc-900"
-                  href="https://github.com/andrewhinh/gpu-mode"
-                >
-                  Notes and GPU-Mode Leaderboard Scripts
-                </a>
-              </li>
-            </ul>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://karpathy.ai/zero-to-hero.html"
-                >Neural Networks: Zero to Hero</a
-              >
-              by Andrej Karpathy
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://cs224n.stanford.edu/"
-                >CS224n (Natural Language Processing)</a
-              >
-              by Stanford University
-            </li>
-            <ul class="list-disc list-inside pl-4 py-2">
-              <li>
-                <a
-                  class="underline hover:text-zinc-900"
-                  href="https://github.com/andrewhinh/cs224n"
-                >
-                  Assignment Solutions
-                </a>
-              </li>
-            </ul>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://cs231n.stanford.edu/"
-                >CS231n (Computer Vision)</a
-              >
-              by Stanford University
-            </li>
-            <ul class="list-disc list-inside pl-4 py-2">
-              <li>
-                <a
-                  class="underline hover:text-zinc-900"
-                  href="https://github.com/andrewhinh/cs231n"
-                >
-                  Assignment Solutions
-                </a>
-              </li>
-            </ul>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.theodinproject.com/"
-                >The Odin Project</a
-              >
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://fullstackdeeplearning.com/"
-                >Full Stack Deep Learning Bootcamp 2022</a
-              >
-              by Charles Frye, Sergey Karayev, and Josh Tobin
-            </li>
-            <div
-              class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4"
-            >
-              <img
-                class="max-h-[40rem] max-w-full"
-                src="../assets/fsdl_2022_certificate.png"
-                alt="FSDL 2022 Certificate of Completion"
-              />
-              <iframe
-                class="h-[28rem] w-[21rem] md:h-[40rem] md:w-[30rem]"
-                src="https://docs.google.com/gview?url=https://drive.google.com/uc?id=18zH_oYVGMNlnOg24igHcawigCJMs6ERK&embedded=true"
-                alt="Charles Frye's Recommendation Letter"
-              ></iframe>
-            </div>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://course.fast.ai/"
-                >Practical Deep Learning for Coders: Part 1</a
-              >
-              by fast.ai
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.coursera.org/specializations/machine-learning-introduction/paidmedia?campaignid=685340575&adgroupid=52515609594&device=c&keyword=machine%20learning%20mooc&matchtype=b&network=g&devicemodel=&creativeid=650958196476&assetgroupid=&targetid=kwd-301777732452&extensionid=&placement=&gad_campaignid=685340575&gbraid=0AAAAADdKX6bHIlKPyCyGGOMQX_ZVsKl_q"
-                >Machine Learning</a
-              >
-              by Andrew Ng
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.udemy.com/course/deeplearning/"
-                >Deep Learning A-Z</a
-              >
-              by Kirill Eremenko and Hadelin de Ponteves
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.udemy.com/course/machinelearning/"
-                >Machine Learning A-Z</a
-              >
-              by Kirill Eremenko and Hadelin de Ponteves
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/?couponCode=CP130525US"
-                >Python for Data Science</a
-              >
-              by Jose Portilla
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.udemy.com/course/complete-python-bootcamp/"
-                >Complete Python Bootcamp</a
-              >
-              by Jose Portilla
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.nand2tetris.org/"
-                >Nand2Tetris: Building a Modern Computer From First
-                Principles</a
-              >
-              by Noam Nisan and Shimon Schocken
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.udacity.com/course/intro-to-relational-databases--ud197"
-                >Intro to Relational Databases</a
-              >
-              by Karl Krueger
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.udacity.com/course/version-control-with-git--ud123"
-                >Version Control with Git</a
-              >
-              by Richard Kalehoff
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.udemy.com/course/java-programming-tutorial-for-beginners/"
-                >Java Programming for Complete Beginners</a
-              >
-              by Ranga Karanam
-            </li>
-            <li>
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.udacity.com/course/c-for-programmers--ud210?ranMID=53187&ranEAID=SAyYsTvLiGQ&ranSiteID=SAyYsTvLiGQ-TK6fppJnViSR7KGRnQCm4w"
-                >C++ for Programmers</a
-              >
-              by Catherine Gamboa
-            </li>
-          </ul>
+<body
+  class="flex flex-col justify-center items-center gap-16 p-8 md:p-24 text-zinc-600 bg-stone-200 font-['Montserrat',system-ui,'Segoe_UI',Roboto,Helvetica,Arial,sans-serif,'Apple_Color_Emoji','Segoe_UI_Emoji','Segoe_UI_Symbol']">
+  <nav class="w-full flex justify-between items-center gap-4 text-2xl font-medium">
+    <a href="../index.html" class="hover:text-zinc-900">
+      Andrew Hinh &mdash; Resume
+    </a>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a href="./resume.html" class="hover:text-zinc-900"> resume </a>
+      <a href="./misc.html" class="hover:text-zinc-900"> misc </a>
+    </div>
+  </nav>
+  <main class="w-full md:w-2/3 leading-8 flex flex-col justify-center items-start gap-16">
+    <div class="text-md">
+      Click
+      <a href="https://docs.google.com/document/d/1Eao-6uXCn0pmGbvg-3dvYUw5ARHAVuvDvsPILX3D3jo/edit?usp=sharing"
+        class="underline hover:text-zinc-900">here</a>
+      to view the standardized document.
+    </div>
+    <div class="w-full flex flex-col justify-center items-start gap-8">
+      <h1 class="text-2xl font-semibold">Education</h1>
+      <div class="w-full flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">Santa Clara University</p>
+        <div class="w-full flex justify-between items-center gap-4">
+          <p class="text-md italic">
+            B.S. in Computer Science and Engineering
+          </p>
+          <p class="text-md italic">2023 - 2026</p>
         </div>
       </div>
-      <div class="w-full flex flex-col justify-center items-start gap-4">
-        <h1 class="text-2xl font-semibold">Skills</h1>
+      <div class="flex flex-col justify-center items-start gap-2">
+        <p class="text-lg font-medium">Technical Courses</p>
         <ul class="list-disc list-inside text-md">
-          <li class="text-md">
-            <span class="font-medium">Languages:</span> Python, TypeScript, Rust, C, CUDA
+          <li>Introduction to Formal Language Theory and Compiler Construction (CSEN 175)</li>
+          <li>Operating Systems (CSEN 177)</li>
+          <li>Computer Architecture (CSEN 122)</li>
+          <li>
+            Principles of Design and Implementation of Programming Languages
+            (CSEN 171)
           </li>
-          <li class="text-md">
-            <span class="font-medium">ML:</span> PyTorch, vLLM/SGLang, NumPy, scikit-learn, wandb
+          <li>Digital Integrated Circuit Design (ECEN 153)</li>
+          <li>Computer Networks (CSEN 146)</li>
+          <li>Software Engineering (CSEN 174)</li>
+          <li>Machine Learning and Data Mining (CSEN 140)</li>
+          <li>
+            Object-Oriented Programming and Advanced Data Structures (CSEN 79)
           </li>
-          <li class="text-md">
-            <span class="font-medium">Web:</span> SvelteKit, FastHTML/htmx
-          </li>
-          <li class="text-md">
-            <span class="font-medium">API:</span> FastAPI, axum, Flask, Typer
-          </li>
-          <li class="text-md">
-            <span class="font-medium">Cloud:</span> Docker, Modal/Fly.io, AWS/GCP, gVisor
-          </li>
-          <li class="text-md">
-            <span class="font-medium">Data:</span> pandas, PostgreSQL/SQLite, matplotlib/seaborn
-          </li>
-      </div>
-      <div class="w-full flex flex-col justify-center items-start gap-8">
-        <h1 class="text-2xl font-semibold">Professional Experience</h1>
-        <div class="w-full flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">
-            Machine Learning Intern at
-            <a class="underline hover:text-zinc-900" href="https://modal.com/"
-              >Modal</a
-            >
-          </p>
-          <div class="w-full flex justify-between items-center gap-4">
-            <p class="text-md italic">June - August 2025</p>
-            <p class="text-md italic">San Francisco, CA / New York, NY</p>
-          </div>
-          <ul class="list-disc list-inside text-md">
-            <li>
-              Built an
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://github.com/modal-labs/sf3"
-                >interactive Street Fighter 3 demo</a
-              >
-              against an RL-trained LLM in a sandboxed game engine to promote
-              Modal sandboxes and their use for RL rollouts and LLMs. A live
-              demo is available at
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://sf3.modal.dev"
-                >sf3.modal.dev</a
-              >
-              . I'd recommend the
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://www.amazon.com/GameSir-Wireless-Controller-Bluetooth-Vibration/dp/B0CMCQ6WMC"
-                >GameSir Nova Lite</a
-              >
-              controller for the best experience.
-            </li>
-            <li>
-              Added examples to the docs, including running high-throughput LLM
-              inference with
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://modal.com/docs/examples/tokasaurus_throughput#high-throughput-llm-inference-with-tokasaurus-llama-32-1b-instruct"
-                >Tokasaurus</a
-              >, editing images with
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://modal.com/docs/examples/image_to_image"
-                >Flux Kontext</a
-              >, streaming transcriptions with
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://modal.com/docs/examples/streaming_kyutai_stt"
-                >Kyutai STT</a
-              >, running
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://github.com/modal-labs/modal-examples/blob/main/misc/trtllm_deepseek.py"
-                >DeepSeek-R1 on Blackwell GPUs</a
-              >
-              using TensorRT-LLM, and connecting to a GPU-powered container over
-              <a
-                class="underline hover:text-zinc-900"
-                href="https://github.com/modal-labs/modal-examples/tree/main/misc/quic"
-                >QUIC</a
-              >. I also updated various other examples to use the latest
-              tooling, models, and best practices.
-            </li>
-          </ul>
-          <div
-            class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4"
-          >
-            <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">
-                Tokasaurus, the &quot;little LLM engine that could&quot; by
-                <a href="https://twitter.com/jordanjuravsky?ref_src=twsrc%5Etfw"
-                  >@jordanjuravsky</a
-                >
-                and
-                <a href="https://twitter.com/EyubogluSabri?ref_src=twsrc%5Etfw"
-                  >@EyubogluSabri</a
-                >
-                of
-                <a href="https://twitter.com/HazyResearch?ref_src=twsrc%5Etfw"
-                  >@HazyResearch</a
-                >/<a
-                  href="https://twitter.com/ScalingIntelLab?ref_src=twsrc%5Etfw"
-                  >@ScalingIntelLab</a
-                >, is capable of some pretty impressive perf.<br /><br />We
-                replicated their report of &gt;80k tok/s for 16bit LLaMA 3.1 8B
-                on Large Language Monkeys GSM8K - and you can too!
-                <a href="https://t.co/lLwodN2v5H">pic.twitter.com/lLwodN2v5H</a>
-              </p>
-              &mdash; Charles 🎉 Frye (@charles_irl)
-              <a
-                href="https://twitter.com/charles_irl/status/1947425937064353959?ref_src=twsrc%5Etfw"
-                >July 21, 2025</a
-              >
-            </blockquote>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
-            <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">
-                Ghiblification has been achieved externally!<a
-                  href="https://twitter.com/bfl_ml?ref_src=twsrc%5Etfw"
-                  >@bfl_ml</a
-                >&#39;s new weights-available Flux Kontext model adds
-                image-to-image capabilities.<br /><br />Run it on B200s with
-                Modal whenever ChatGPT&#39;s image gen is too slow for you.
-                <a href="https://t.co/me7LsNd8Ev">pic.twitter.com/me7LsNd8Ev</a>
-              </p>
-              &mdash; Charles 🎉 Frye (@charles_irl)
-              <a
-                href="https://twitter.com/charles_irl/status/1939691814040350895?ref_src=twsrc%5Etfw"
-                >June 30, 2025</a
-              >
-            </blockquote>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/modal-linkedin.png"
-              alt="Modal LinkedIn Post - National Intern Day"
-            />
-          </div>
-        </div>
-        <div class="w-full flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">
-            Machine Learning Intern at
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://www.edlight.com/"
-              >Edlight</a
-            >
-          </p>
-          <div class="w-full flex justify-between items-center gap-4">
-            <p class="text-md italic">April 2024 - February 2025</p>
-            <p class="text-md italic">Remote</p>
-          </div>
-          <ul class="list-disc list-inside text-md">
-            <li>
-              Built an assignment image to IEP goals matching system utilizing a
-              multi-step Qwen2-VL-7B-Instruct-powered API that won the
-              end-of-year week-long hackathon and became the biggest product
-              release for the company in Q1.
-            </li>
-            <li>
-              Encouraged leadership to adopt the usage of Modal and W&B to
-              reduce GPU costs and improve experiment management, leading to a
-              $5000 grant from Modal and all artifacts (datasets, models) being
-              shared via W&B.
-            </li>
-          </ul>
-          <div
-            class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4"
-          >
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/edlight-cert-1.png"
-              alt="Edlight Certificate 1"
-            />
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/edlight-cert-2.png"
-              alt="Edlight Certificate 2"
-            />
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/edlight-cert-3.png"
-              alt="Edlight Certificate 3"
-            />
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/edlight-cert-4.png"
-              alt="Edlight Certificate 4"
-            />
-          </div>
-        </div>
-        <div class="w-full flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">
-            Machine Learning Intern at
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://procurementsciences.com/"
-              >Procurement Sciences</a
-            >
-          </p>
-          <div class="w-full flex justify-between items-center gap-4">
-            <p class="text-md italic">February - October 2023</p>
-            <p class="text-md italic">Remote</p>
-          </div>
-          <ul class="list-disc list-inside text-md">
-            <li>
-              Led and contributed to 10+ core LLM/RAG projects (Resource
-              Uploader, Web Scraper, Opportunity Search, Intellibid Proposal
-              Writer, AI Chats) as the first ML engineer, helping to expand the
-              customer base from 10 to 25 organizations (60 to 150 users), which
-              led to an ARR increase from $86k to $350k.
-            </li>
-          </ul>
-          <div class="p-4">
-            <iframe
-              class="h-[28rem] w-[21rem] md:h-[40rem] md:w-[30rem]"
-              src="https://docs.google.com/gview?url=https://drive.google.com/uc?id=1ma0W37C7YRUqkuCN_Vu9CZ7a394lEm4d&embedded=true"
-              alt="John Knapp's Recommendation Letter"
-            ></iframe>
-          </div>
-        </div>
-        <div class="w-full flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">
-            Special Interest Group AI Lead at
-            <a class="underline hover:text-zinc-900" href="https://www.acm.org/"
-              >Association for Computing Machinery</a
-            >
-          </p>
-          <div class="w-full flex justify-between items-center gap-4">
-            <p class="text-md italic">September 2022 - May 2023</p>
-            <p class="text-md italic">Merced, CA</p>
-          </div>
-          <ul class="list-disc list-inside text-md">
-            <li>
-              Led club-wide projects and conducted workshops and hackathons with
-              experts such as Fabiana Clemente of YData, Andrea Parker of W&B,
-              and Charles Frye of FSDL, covering AI fundamentals to advanced
-              industry tools.
-            </li>
-          </ul>
-          <div
-            class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4"
-          >
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/acm-workshop.jpg"
-              alt="ACM Workshop Picture"
-            />
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/acm-leadership.jpg"
-              alt="ACM Leadership Picture"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col justify-center items-start gap-8">
-        <h1 class="text-2xl font-semibold">Projects</h1>
-        <div class="flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">rlm-rs</p>
-          <p class="text-md italic">January 2026 - Present</p>
-          <p class="text-md">
-            A Rust implementation of Recursive Language Models using RustPython and gVisor.
-          </p>
-          <p class="text-md font-medium">
-            Links:
-            <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/rlm-rs">GitHub</a>
-          </p>
-        </div>
-        <div class="flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">web os</p>
-          <p class="text-md italic">September 2025 - January 2026</p>
-          <p class="text-md">
-             A UNIX-like Rust OS built for RISC-V, available on the web.
-          </p>
-          <p class="text-md">Features include:</p>
-          <ul class="list-disc list-inside text-md pl-4">
-            <li>COW fork, mmap, and kernel threads.</li>
-            <li>Async kernel executor that handles UART/disk/network I/O cooperatively without blocking CPUs in addition to the preemptive user scheduler.</li>
-            <li>APLIC/MSI interrupts for per-hart message-signaled delivery, replacing PLIC.</li>
-            <li>Signals with interval timers, job control, and poll/select.</li>
-            <li>IPC including shared memory and AF_UNIX sockets.</li>
-            <li>Journaling filesystem with fsync, crash recovery, symlinks, and permissions.</li>
-            <li>TCP/UDP networking over virtio-net.</li>
-            <li>Framebuffer with UTF-8/ANSI support and keyboard/mouse input.</li>
-            <li>Web UI that streams the framebuffer via VNC over WebRTC.</li>
-          </ul>
-          <p class="text-md font-medium">
-            Links:
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://web-os.dev/"
-              >Live Demo</a
-            >,
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://github.com/andrewhinh/web-os"
-              >GitHub</a
-            >
-          </p>
-        </div>
-        <div class="flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">multiplication circuits</p>
-          <p class="text-md italic">April 2025</p>
-          <p class="text-md">
-            A potential explanation for how Qwen2.5-0.5B (a 0.5 billion
-            parameter language model developed by Alibaba) performs
-            multiplication is that it uses a combination of sequential
-            processing and pattern matching. The model appears to:
-          </p>
-          <ol class="list-decimal list-inside text-md pl-4 py-2">
-            <li>
-              Store partial products (intermediate multiplication results) in
-              the residual stream (the main information highway of the
-              transformer model where each layer adds its computations). This
-              storage mechanism allows the model to maintain intermediate
-              calculations across layers, similar to how a human might write
-              down intermediate steps while solving multiplication problems.
-            </li>
-            <li>
-              Process subproblems (smaller multiplication steps) sequentially
-              across layers (the building blocks of transformer models, each
-              containing attention and MLP components). This sequential
-              processing mirrors traditional multiplication algorithms, where
-              each digit multiplication and addition is handled step by step.
-            </li>
-            <li>
-              Use specific attention heads (individual components within
-              attention layers that can focus on different aspects of the input)
-              for final addition. These specialized heads appear to be
-              responsible for combining the partial products stored in the
-              residual stream into the final answer.
-            </li>
-          </ol>
-          <p>
-            These findings provide semi-concrete evidence for the
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://www.answer.ai/posts/2024-07-25-transformers-as-matchers.html"
-              >linearized subgraph matching hypothesis</a
-            >, which suggests that transformers solve complex tasks by matching
-            patterns they've seen during training. The model's approach to
-            multiplication appears to be a learned implementation of traditional
-            multiplication algorithms, broken down into recognizable
-            subpatterns.
-          </p>
-          <p class="text-md font-medium">
-            Links:
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://github.com/andrewhinh/mult-circuit"
-              >GitHub</a
-            >
-          </p>
-        </div>
-        <div class="flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">
-            ultrasound substructure localization
-          </p>
-          <p class="text-md italic">January - March 2025</p>
-          <p class="text-md">
-            Created an automated ultrasound substructure localization system
-            utilizing a fine-tuned Qwen2.5-VL-3B-Instruct that reduces Hausdorff
-            distance by 57.65% and Euclidean distance by 31.72% compared to the
-            base model. ETL, evaluation, and model quantization/training
-            alongside an API and website completed and served for under $2. Made
-            as a POC to apply LLMs to pixel-level tasks, but would deem it
-            unfeasible for production use.
-          </p>
-          <p class="text-md font-medium">
-            Links:
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://github.com/andrewhinh/mhf"
-              >GitHub</a
-            >,
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://docs.google.com/document/d/1JlFB8ReklXnuTDAgMZ1R-huJg36f4kV9Y9CpOZrKLmI/edit?usp=drive_link"
-              >Paper</a
-            >
-          </p>
-          <div class="p-4">
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/mhf-demo.jpeg"
-              alt="MHF Demo"
-            />
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">minimal flash attention</p>
-          <p class="text-md italic">December 2024 - January 2025</p>
-          <p class="text-md">
-            Wrote a minimal implementation of Flash Attention to help learn CUDA
-            alongside a website to visualize its effect on input embeddings.
-          </p>
-          <p class="text-md font-medium">
-            Links:
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://github.com/andrewhinh/flash-attn"
-              >GitHub</a
-            >
-          </p>
-          <div class="p-4">
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/flash-attn-demo.jpeg"
-              alt="Flash Attention Demo"
-            />
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">formless</p>
-          <p class="text-md italic">September 2024 - March 2025</p>
-          <p class="text-md">
-            Created a hard handwriting image OCR system via a public API,
-            website, and PyPI package, utilizing a fine-tuned
-            Qwen2.5-VL-7B-Instruct. Used FineWeb-inspired data quality filtering
-            and stratified deduplication alongside SFT and DPO on
-            worst-performing samples to reduce character error rate by 8.18%
-            compared to the base model. Created the website using FastHTML to
-            learn about the library and hypermedia systems.
-          </p>
-          <p class="text-md font-medium">
-            Links:
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://github.com/andrewhinh/formless"
-              >GitHub</a
-            >
-          </p>
-          <div class="p-4">
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/formless-demo.jpeg"
-              alt="Formless Demo"
-            />
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">dilemma</p>
-          <p class="text-md italic">January - April 2024</p>
-          <p class="text-md">
-            Built a real estate website demo to learn about full-stack
-            development using React.js, Next.js, and TailwindCSS for the
-            frontend, and FastAPI, PostgreSQL, and SQLModel for the backend.
-          </p>
-          <p class="text-md font-medium">
-            Links:
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://github.com/andrewhinh/dilemma"
-              >GitHub</a
-            >
-          </p>
-          <div class="p-4">
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/dilemma-demo.jpg"
-              alt="Dilemma Demo"
-            />
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">captafied</p>
-          <p class="text-md italic">December 2022 - February 2023</p>
-          <p class="text-md">
-            Built a website for tabular data analysis using natural language.
-            Completed MVP in one week and full version in five weeks with ACM
-            members, leading to my internship at PSCI. Integrated Plotly Dash
-            for diagram generation and display, ydata-profiling for data
-            reports, AWS S3 to store data cheaply, and AWS Lambda (+ Docker) to
-            reduce inference costs.
-          </p>
-          <p class="text-md font-medium">
-            Links:
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://github.com/andrewhinh/captafied"
-              >GitHub</a
-            >
-          </p>
-          <div class="p-4">
-            <video
-              class="max-h-[40rem] max-w-full"
-              alt="Captafied Demo"
-              controls
-              loop
-              muted
-            >
-              <source src="../assets/captafied-demo.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">admirer</p>
-          <p class="text-md italic">September - November 2022</p>
-          <p class="text-md">
-            Built and served a CLIP + GPT-2-based VLM nearly two years before
-            any major provider release. Highlighted as a top FSDL 2022 project
-            among industry professionals and post-docs, and won "Most Promising
-            Entry" at ZenML's MLOps competition.
-          </p>
-          <p class="text-md font-medium">
-            Links:
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://github.com/andrewhinh/admirer"
-              >GitHub</a
-            >,
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://bit.ly/fsdl-showcase"
-              >FSDL Showcase</a
-            >,
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://bit.ly/zenml-vid"
-              >ZenML Video</a
-            >,
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://bit.ly/zenml-blog"
-              >ZenML Blog</a
-            >,
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://bit.ly/zenml-post"
-              >ZenML Post</a
-            >
-          </p>
-          <div
-            class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4"
-          >
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/admirer-demo.jpg"
-              alt="Admirer Demo"
-            />
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/admirer-pipeline.jpg"
-              alt="Admirer Pipeline"
-            />
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-start gap-2">
-          <p class="text-xl font-medium">chexray</p>
-          <p class="text-md italic">April 2020 - February 2022</p>
-          <div class="flex flex-col justify-center items-start gap-4 text-md">
-            <p>
-              Created a website that uses chest X-rays to generate detailed
-              diagnoses for patients with lung diseases. I felt that this was a
-              great way for me to not only apply what I'd learn in the online
-              courses I took, but also learn how to test ideas in interesting
-              papers for myself.
-            </p>
-            <p>
-              In my first iteration, I wanted to learn Keras and coincidentally
-              stumbled across a chest x-ray disease dataset on Kaggle. I then
-              built an image classifier to determine whether a person's chest
-              x-ray is normal or contains COVID19, viral pneumonia, or bacterial
-              pneumonia.
-            </p>
-            <p>
-              In my second iteration, I wanted to explore classifying even more
-              diseases in addition to displaying a confidence level for the
-              predictions. I then built a new image classifier to do just that.
-            </p>
-            <p>
-              In my third iteration, I wanted to apply what I'd learned in the
-              2020 edition of the fast.ai course and took a different approach
-              to this problem. I decided to train two models: a model that
-              generates radiologist reports from the chest x-rays and a
-              classification model that summarizes the generated report, the
-              images, and other clinical data into a list of diseases the
-              patient most likely needs to be checked out for. I even got the
-              chance to work with a biology teacher at my high school to help me
-              understand the technical details of x-rays and the diseases they
-              can detect, which culminated in a presentation for the entire
-              school to see.
-            </p>
-            <p>
-              In my last iteration, I used around eight percent of the training
-              set from the MIMIC-CXR dataset to improve the two above-mentioned
-              models. In the end, the report generation model achieved a Bleu4
-              score of 0.0704 and the diagnosis model achieved a precision of
-              .545 and a recall of .824. As a comparison, a contemporary SOTA
-              model uses the entire training set to achieve a Bleu4 score of
-              0.103. For classification, the authors use an NLP labeler to
-              achieve a precision of 0.333 and a recall of 0.273.
-            </p>
-          </div>
-          <p class="text-md font-medium">
-            Links:
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://github.com/andrewhinh/covid-pneumonia"
-              >First Iteration</a
-            >,
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://github.com/andrewhinh/xray"
-              >Second Iteration</a
-            >,
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://github.com/andrewhinh/chexray-v1"
-              >Third Iteration</a
-            >,
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://github.com/andrewhinh/chexray-v2"
-              >Final Iteration</a
-            >,
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://arxiv.org/abs/1502.03044"
-            >
-              Report Generation Model
-            </a>
-            ,
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://forums.fast.ai/t/gradient-blending-for-multi-modal-models-in-progress/75645/12"
-            >
-              Multi-Modal Classification Model
-            </a>
-            ,
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://bit.ly/3SUP5qA"
-            >
-              SOTA Comparison
-            </a>
-            ,
-            <a
-              class="underline hover:text-zinc-900"
-              href="https://bit.ly/3hXl4Jq"
-            >
-              NLP Labeler
-            </a>
-          </p>
-          <div
-            class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4"
-          >
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/chexray-report.jpg"
-              alt="CheXRay Report"
-            />
-            <img
-              class="max-h-[40rem] max-w-full"
-              src="../assets/chexray-scan.jpg"
-              alt="CheXRay Scan"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col justify-center items-start gap-4">
-        <h1 class="text-2xl font-semibold">Awards</h1>
-        <ul class="list-disc list-inside text-md">
-          <li>GPU Mode Practice Round Winner</li>
-          <li>Most Promising Entry @ ZenML MLOps Competition</li>
-          <li>Top-25 Project of FSDL</li>
-          <li>AP Scholar Award</li>
-          <li>Black belt in Taekwondo, certified by World Taekwondo.</li>
-          <li>Music Teachers National Association (MTNA) level 10 pianist.</li>
+          <li>Web Information Management (CSEN 169)</li>
+          <li>Introduction to Logic Design (ECEN 21)</li>
+          <li>Electric Circuits I (ECEN 50)</li>
+          <li>Introduction to Embedded Systems (CSEN 20)</li>
+          <li>Linear Algebra (MATH 53)</li>
+          <li>Theory of Automata and Languages (CSCI 161)</li>
+          <li>Advanced Programming (CSCI 62)</li>
+          <li>Probability and Statistics II (MATH 123)</li>
+          <li>Theory of Algorithms (CSCI 163)</li>
+          <li>Data Structures (CSCI 61)</li>
+          <li>Probability and Statistics I (MATH 122)</li>
+          <li>Discrete Mathematics (MATH 51)</li>
         </ul>
       </div>
-    </main>
-  </body>
+      <div class="w-full flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">University of California, Merced</p>
+        <div class="w-full flex justify-between items-center gap-4">
+          <p class="text-md italic">B.S. in Computer Science</p>
+          <p class="text-md italic">2022 - 2023</p>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-start gap-2">
+        <p class="text-lg font-medium">Technical Courses</p>
+        <ul class="list-disc list-inside text-md">
+          <li>Vector Calculus (MATH 023)</li>
+          <li>Introductory Physics I for Physical Sciences (PHYS 008)</li>
+          <li>Introductory Physics II for Physical Sciences (PHYS 009)</li>
+          <li>Advanced Programming (CSE 024)</li>
+        </ul>
+      </div>
+      <div class="flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">Misc</p>
+        <ul class="list-disc list-inside text-md [&_ul]:list-[revert]">
+          <li>
+            <a class="underline hover:text-zinc-900"
+              href="https://www.youtube.com/watch?v=o7h_sYMk_oc&list=PLUl4u3cNGP63VIBQVWguXxZZi0566y7Wf">
+              MIT 6.172 Performance Engineering of Software Systems, Fall 2018
+            </a>
+            by Charles Leiserson
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900"
+              href="https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ">
+              DeepMind X UCL | Introduction to Reinforcement Learning 2015
+            </a>
+            by David Silver
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900"
+              href="https://www.youtube.com/watch?v=4pkbXmE4POc&list=PLRRuQYjFhpmubuwx-w8X964ofVkW1T8O4">
+              Programming Massively Parallel Processors: A Hands-on Approach
+            </a>
+            by Wen-mei W. Hwu, David B. Kirk, and Izzat El Hajj
+          </li>
+          <ul class="list-disc list-inside pl-4 py-2">
+            <li>
+              <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/gpu-mode">
+                Notes and GPU-Mode Leaderboard Scripts
+              </a>
+            </li>
+          </ul>
+          <li>
+            <a class="underline hover:text-zinc-900" href="https://karpathy.ai/zero-to-hero.html">Neural Networks: Zero
+              to Hero</a>
+            by Andrej Karpathy
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900" href="https://cs224n.stanford.edu/">CS224n (Natural Language
+              Processing)</a>
+            by Stanford University
+          </li>
+          <ul class="list-disc list-inside pl-4 py-2">
+            <li>
+              <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/cs224n">
+                Assignment Solutions
+              </a>
+            </li>
+          </ul>
+          <li>
+            <a class="underline hover:text-zinc-900" href="https://cs231n.stanford.edu/">CS231n (Computer Vision)</a>
+            by Stanford University
+          </li>
+          <ul class="list-disc list-inside pl-4 py-2">
+            <li>
+              <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/cs231n">
+                Assignment Solutions
+              </a>
+            </li>
+          </ul>
+          <li>
+            <a class="underline hover:text-zinc-900" href="https://www.theodinproject.com/">The Odin Project</a>
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900" href="https://fullstackdeeplearning.com/">Full Stack Deep Learning
+              Bootcamp 2022</a>
+            by Charles Frye, Sergey Karayev, and Josh Tobin
+          </li>
+          <div class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4">
+            <img class="max-h-[40rem] max-w-full" src="../assets/fsdl_2022_certificate.png"
+              alt="FSDL 2022 Certificate of Completion" />
+            <iframe class="h-[28rem] w-[21rem] md:h-[40rem] md:w-[30rem]"
+              src="https://docs.google.com/gview?url=https://drive.google.com/uc?id=18zH_oYVGMNlnOg24igHcawigCJMs6ERK&embedded=true"
+              alt="Charles Frye's Recommendation Letter"></iframe>
+          </div>
+          <li>
+            <a class="underline hover:text-zinc-900" href="https://course.fast.ai/">Practical Deep Learning for Coders:
+              Part 1</a>
+            by fast.ai
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900"
+              href="https://www.coursera.org/specializations/machine-learning-introduction/paidmedia?campaignid=685340575&adgroupid=52515609594&device=c&keyword=machine%20learning%20mooc&matchtype=b&network=g&devicemodel=&creativeid=650958196476&assetgroupid=&targetid=kwd-301777732452&extensionid=&placement=&gad_campaignid=685340575&gbraid=0AAAAADdKX6bHIlKPyCyGGOMQX_ZVsKl_q">Machine
+              Learning</a>
+            by Andrew Ng
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900" href="https://www.udemy.com/course/deeplearning/">Deep Learning
+              A-Z</a>
+            by Kirill Eremenko and Hadelin de Ponteves
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900" href="https://www.udemy.com/course/machinelearning/">Machine
+              Learning A-Z</a>
+            by Kirill Eremenko and Hadelin de Ponteves
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900"
+              href="https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/?couponCode=CP130525US">Python
+              for Data Science</a>
+            by Jose Portilla
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900"
+              href="https://www.udemy.com/course/complete-python-bootcamp/">Complete Python Bootcamp</a>
+            by Jose Portilla
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900" href="https://www.nand2tetris.org/">Nand2Tetris: Building a Modern
+              Computer From First
+              Principles</a>
+            by Noam Nisan and Shimon Schocken
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900"
+              href="https://www.udacity.com/course/intro-to-relational-databases--ud197">Intro to Relational
+              Databases</a>
+            by Karl Krueger
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900"
+              href="https://www.udacity.com/course/version-control-with-git--ud123">Version Control with Git</a>
+            by Richard Kalehoff
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900"
+              href="https://www.udemy.com/course/java-programming-tutorial-for-beginners/">Java Programming for Complete
+              Beginners</a>
+            by Ranga Karanam
+          </li>
+          <li>
+            <a class="underline hover:text-zinc-900"
+              href="https://www.udacity.com/course/c-for-programmers--ud210?ranMID=53187&ranEAID=SAyYsTvLiGQ&ranSiteID=SAyYsTvLiGQ-TK6fppJnViSR7KGRnQCm4w">C++
+              for Programmers</a>
+            by Catherine Gamboa
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-full flex flex-col justify-center items-start gap-4">
+      <h1 class="text-2xl font-semibold">Skills</h1>
+      <ul class="list-disc list-inside text-md">
+        <li class="text-md">
+          <span class="font-medium">Languages:</span> Python, TypeScript, Rust, C, CUDA
+        </li>
+        <li class="text-md">
+          <span class="font-medium">ML:</span> PyTorch, vLLM/SGLang, NumPy, scikit-learn, wandb
+        </li>
+        <li class="text-md">
+          <span class="font-medium">Web:</span> SvelteKit, FastHTML/htmx
+        </li>
+        <li class="text-md">
+          <span class="font-medium">API:</span> FastAPI, axum, Flask, Typer
+        </li>
+        <li class="text-md">
+          <span class="font-medium">Cloud:</span> Docker, Modal/Fly.io, AWS/GCP, gVisor
+        </li>
+        <li class="text-md">
+          <span class="font-medium">Data:</span> pandas, PostgreSQL/SQLite, matplotlib/seaborn
+        </li>
+    </div>
+    <div class="w-full flex flex-col justify-center items-start gap-8">
+      <h1 class="text-2xl font-semibold">Professional Experience</h1>
+      <div class="w-full flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">
+          Machine Learning Intern at
+          <a class="underline hover:text-zinc-900" href="https://modal.com/">Modal</a>
+        </p>
+        <div class="w-full flex justify-between items-center gap-4">
+          <p class="text-md italic">June - August 2025</p>
+          <p class="text-md italic">San Francisco, CA / New York, NY</p>
+        </div>
+        <ul class="list-disc list-inside text-md">
+          <li>
+            Built an
+            <a class="underline hover:text-zinc-900" href="https://github.com/modal-labs/sf3">interactive Street Fighter
+              3 demo</a>
+            against an RL-trained LLM in a sandboxed game engine to promote
+            Modal sandboxes and their use for RL rollouts and LLMs. A live
+            demo is available at
+            <a class="underline hover:text-zinc-900" href="https://sf3.modal.dev">sf3.modal.dev</a>
+            . I'd recommend the
+            <a class="underline hover:text-zinc-900"
+              href="https://www.amazon.com/GameSir-Wireless-Controller-Bluetooth-Vibration/dp/B0CMCQ6WMC">GameSir Nova
+              Lite</a>
+            controller for the best experience.
+          </li>
+          <li>
+            Added examples to the docs, including running high-throughput LLM
+            inference with
+            <a class="underline hover:text-zinc-900"
+              href="https://modal.com/docs/examples/tokasaurus_throughput#high-throughput-llm-inference-with-tokasaurus-llama-32-1b-instruct">Tokasaurus</a>,
+            editing images with
+            <a class="underline hover:text-zinc-900" href="https://modal.com/docs/examples/image_to_image">Flux
+              Kontext</a>, streaming transcriptions with
+            <a class="underline hover:text-zinc-900" href="https://modal.com/docs/examples/streaming_kyutai_stt">Kyutai
+              STT</a>, running
+            <a class="underline hover:text-zinc-900"
+              href="https://github.com/modal-labs/modal-examples/blob/main/misc/trtllm_deepseek.py">DeepSeek-R1 on
+              Blackwell GPUs</a>
+            using TensorRT-LLM, and connecting to a GPU-powered container over
+            <a class="underline hover:text-zinc-900"
+              href="https://github.com/modal-labs/modal-examples/tree/main/misc/quic">QUIC</a>. I also updated various
+            other examples to use the latest
+            tooling, models, and best practices.
+          </li>
+        </ul>
+        <div class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4">
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              Tokasaurus, the &quot;little LLM engine that could&quot; by
+              <a href="https://twitter.com/jordanjuravsky?ref_src=twsrc%5Etfw">@jordanjuravsky</a>
+              and
+              <a href="https://twitter.com/EyubogluSabri?ref_src=twsrc%5Etfw">@EyubogluSabri</a>
+              of
+              <a href="https://twitter.com/HazyResearch?ref_src=twsrc%5Etfw">@HazyResearch</a>/<a
+                href="https://twitter.com/ScalingIntelLab?ref_src=twsrc%5Etfw">@ScalingIntelLab</a>, is capable of some
+              pretty impressive perf.<br /><br />We
+              replicated their report of &gt;80k tok/s for 16bit LLaMA 3.1 8B
+              on Large Language Monkeys GSM8K - and you can too!
+              <a href="https://t.co/lLwodN2v5H">pic.twitter.com/lLwodN2v5H</a>
+            </p>
+            &mdash; Charles 🎉 Frye (@charles_irl)
+            <a href="https://twitter.com/charles_irl/status/1947425937064353959?ref_src=twsrc%5Etfw">July 21, 2025</a>
+          </blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              Ghiblification has been achieved externally!<a
+                href="https://twitter.com/bfl_ml?ref_src=twsrc%5Etfw">@bfl_ml</a>&#39;s new weights-available Flux
+              Kontext model adds
+              image-to-image capabilities.<br /><br />Run it on B200s with
+              Modal whenever ChatGPT&#39;s image gen is too slow for you.
+              <a href="https://t.co/me7LsNd8Ev">pic.twitter.com/me7LsNd8Ev</a>
+            </p>
+            &mdash; Charles 🎉 Frye (@charles_irl)
+            <a href="https://twitter.com/charles_irl/status/1939691814040350895?ref_src=twsrc%5Etfw">June 30, 2025</a>
+          </blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <img class="max-h-[40rem] max-w-full" src="../assets/modal-linkedin.png"
+            alt="Modal LinkedIn Post - National Intern Day" />
+        </div>
+      </div>
+      <div class="w-full flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">
+          Machine Learning Intern at
+          <a class="underline hover:text-zinc-900" href="https://www.edlight.com/">Edlight</a>
+        </p>
+        <div class="w-full flex justify-between items-center gap-4">
+          <p class="text-md italic">April 2024 - February 2025</p>
+          <p class="text-md italic">Remote</p>
+        </div>
+        <ul class="list-disc list-inside text-md">
+          <li>
+            Built an assignment image to IEP goals matching system utilizing a
+            multi-step Qwen2-VL-7B-Instruct-powered API that won the
+            end-of-year week-long hackathon and became the biggest product
+            release for the company in Q1.
+          </li>
+          <li>
+            Encouraged leadership to adopt the usage of Modal and W&B to
+            reduce GPU costs and improve experiment management, leading to a
+            $5000 grant from Modal and all artifacts (datasets, models) being
+            shared via W&B.
+          </li>
+        </ul>
+        <div class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4">
+          <img class="max-h-[40rem] max-w-full" src="../assets/edlight-cert-1.png" alt="Edlight Certificate 1" />
+          <img class="max-h-[40rem] max-w-full" src="../assets/edlight-cert-2.png" alt="Edlight Certificate 2" />
+          <img class="max-h-[40rem] max-w-full" src="../assets/edlight-cert-3.png" alt="Edlight Certificate 3" />
+          <img class="max-h-[40rem] max-w-full" src="../assets/edlight-cert-4.png" alt="Edlight Certificate 4" />
+        </div>
+      </div>
+      <div class="w-full flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">
+          Machine Learning Intern at
+          <a class="underline hover:text-zinc-900" href="https://procurementsciences.com/">Procurement Sciences</a>
+        </p>
+        <div class="w-full flex justify-between items-center gap-4">
+          <p class="text-md italic">February - October 2023</p>
+          <p class="text-md italic">Remote</p>
+        </div>
+        <ul class="list-disc list-inside text-md">
+          <li>
+            Led and contributed to 10+ core LLM/RAG projects (Resource
+            Uploader, Web Scraper, Opportunity Search, Intellibid Proposal
+            Writer, AI Chats) as the first ML engineer, helping to expand the
+            customer base from 10 to 25 organizations (60 to 150 users), which
+            led to an ARR increase from $86k to $350k.
+          </li>
+        </ul>
+        <div class="p-4">
+          <iframe class="h-[28rem] w-[21rem] md:h-[40rem] md:w-[30rem]"
+            src="https://docs.google.com/gview?url=https://drive.google.com/uc?id=1ma0W37C7YRUqkuCN_Vu9CZ7a394lEm4d&embedded=true"
+            alt="John Knapp's Recommendation Letter"></iframe>
+        </div>
+      </div>
+      <div class="w-full flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">
+          Special Interest Group AI Lead at
+          <a class="underline hover:text-zinc-900" href="https://www.acm.org/">Association for Computing Machinery</a>
+        </p>
+        <div class="w-full flex justify-between items-center gap-4">
+          <p class="text-md italic">September 2022 - May 2023</p>
+          <p class="text-md italic">Merced, CA</p>
+        </div>
+        <ul class="list-disc list-inside text-md">
+          <li>
+            Led club-wide projects and conducted workshops and hackathons with
+            experts such as Fabiana Clemente of YData, Andrea Parker of W&B,
+            and Charles Frye of FSDL, covering AI fundamentals to advanced
+            industry tools.
+          </li>
+        </ul>
+        <div class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4">
+          <img class="max-h-[40rem] max-w-full" src="../assets/acm-workshop.jpg" alt="ACM Workshop Picture" />
+          <img class="max-h-[40rem] max-w-full" src="../assets/acm-leadership.jpg" alt="ACM Leadership Picture" />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col justify-center items-start gap-8">
+      <h1 class="text-2xl font-semibold">Projects</h1>
+      <div class="flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">rlm-rs</p>
+        <p class="text-md italic">January - February 2026</p>
+        <p class="text-md">
+          A Rust implementation of Recursive Language Models using RustPython and gVisor.
+        </p>
+        <p class="text-md">
+          To keep the async runtime unblocked, the interpreter runs on a dedicated worker thread and communicates with
+          the Tokio runtime through mpsc channels and one-shot responses. When Python needs to call the LLM or spawn a
+          recursive sub-RLM, the worker re-enters the async runtime via block_on.
+        </p>
+        <p class="text-md">I also implemented a minimal OpenAI-compatible API with per-session REPL sandboxing and
+          shared program state, so each session has its own isolated interpreter state in a gVisor container. Separate
+          threads for session handling and sandbox allocation allow different sessions to execute concurrently.
+        </p>
+        <p class="text-md font-medium">
+          Links:
+          <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/rlm-rs">GitHub</a>
+        </p>
+        <div class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4">
+          <div class="flex justify-center items-center">
+            <img class="max-h-[40rem] max-w-full" src="../assets/rlm-rs-arch.png" alt="RLM-RS Architecture" />
+          </div>
+          <img class="max-h-[40rem] max-w-full" src="../assets/rlm-rs-async.png" alt="RLM-RS Async Sequence Diagram" />
+          <img class="max-h-[40rem] max-w-full" src="../assets/rlm-rs-request.png" alt="RLM-RS Request Load Test" />
+          <img class="max-h-[40rem] max-w-full" src="../assets/rlm-rs-response.png" alt="RLM-RS Response Load Test" />
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">web os</p>
+        <p class="text-md italic">September 2025 - January 2026</p>
+        <p class="text-md">
+          A UNIX-like Rust OS built for RISC-V, available on the web.
+        </p>
+        <p class="text-md">Features include:</p>
+        <ul class="list-disc list-inside text-md pl-4">
+          <li>COW fork, mmap, and kernel threads.</li>
+          <li>Async kernel executor that handles UART/disk/network I/O cooperatively without blocking CPUs in addition
+            to the preemptive user scheduler.</li>
+          <li>APLIC/MSI interrupts for per-hart message-signaled delivery, replacing PLIC.</li>
+          <li>Signals with interval timers, job control, and poll/select.</li>
+          <li>IPC including shared memory and AF_UNIX sockets.</li>
+          <li>Journaling filesystem with fsync, crash recovery, symlinks, and permissions.</li>
+          <li>TCP/UDP networking over virtio-net.</li>
+          <li>Framebuffer with UTF-8/ANSI support and keyboard/mouse input.</li>
+          <li>Web UI that streams the framebuffer via VNC over WebRTC.</li>
+        </ul>
+        <p class="text-md font-medium">
+          Links:
+          <a class="underline hover:text-zinc-900" href="https://web-os.dev/">Live Demo</a>,
+          <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/web-os">GitHub</a>
+        </p>
+        <div class="p-4">
+          <img class="max-h-[40rem] max-w-full" src="../assets/web-os-demo.gif" alt="Web OS Demo" />
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">multiplication circuits</p>
+        <p class="text-md italic">April 2025</p>
+        <p class="text-md">
+          A potential explanation for how Qwen2.5-0.5B (a 0.5 billion
+          parameter language model developed by Alibaba) performs
+          multiplication is that it uses a combination of sequential
+          processing and pattern matching. The model appears to:
+        </p>
+        <ol class="list-decimal list-inside text-md pl-4 py-2">
+          <li>
+            Store partial products (intermediate multiplication results) in
+            the residual stream (the main information highway of the
+            transformer model where each layer adds its computations). This
+            storage mechanism allows the model to maintain intermediate
+            calculations across layers, similar to how a human might write
+            down intermediate steps while solving multiplication problems.
+          </li>
+          <li>
+            Process subproblems (smaller multiplication steps) sequentially
+            across layers (the building blocks of transformer models, each
+            containing attention and MLP components). This sequential
+            processing mirrors traditional multiplication algorithms, where
+            each digit multiplication and addition is handled step by step.
+          </li>
+          <li>
+            Use specific attention heads (individual components within
+            attention layers that can focus on different aspects of the input)
+            for final addition. These specialized heads appear to be
+            responsible for combining the partial products stored in the
+            residual stream into the final answer.
+          </li>
+        </ol>
+        <p>
+          These findings provide semi-concrete evidence for the
+          <a class="underline hover:text-zinc-900"
+            href="https://www.answer.ai/posts/2024-07-25-transformers-as-matchers.html">linearized subgraph matching
+            hypothesis</a>, which suggests that transformers solve complex tasks by matching
+          patterns they've seen during training. The model's approach to
+          multiplication appears to be a learned implementation of traditional
+          multiplication algorithms, broken down into recognizable
+          subpatterns.
+        </p>
+        <p class="text-md font-medium">
+          Links:
+          <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/mult-circuit">GitHub</a>
+        </p>
+        <div class="p-4">
+          <img class="max-h-[40rem] max-w-full" src="../assets/mult-circuit-ind-head.png" alt="Induction Heads Diagram" />
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">
+          ultrasound substructure localization
+        </p>
+        <p class="text-md italic">January - March 2025</p>
+        <p class="text-md">
+          Created an automated ultrasound substructure localization system
+          utilizing a fine-tuned Qwen2.5-VL-3B-Instruct that reduces Hausdorff
+          distance by 57.65% and Euclidean distance by 31.72% compared to the
+          base model. ETL, evaluation, and model quantization/training
+          alongside an API and website completed and served for under $2. Made
+          as a POC to apply LLMs to pixel-level tasks, but would deem it
+          unfeasible for production use.
+        </p>
+        <p class="text-md font-medium">
+          Links:
+          <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/mhf">GitHub</a>,
+          <a class="underline hover:text-zinc-900"
+            href="https://docs.google.com/document/d/1JlFB8ReklXnuTDAgMZ1R-huJg36f4kV9Y9CpOZrKLmI/edit?usp=drive_link">Paper</a>
+        </p>
+        <div class="p-4">
+          <img class="max-h-[40rem] max-w-full" src="../assets/mhf-demo.jpeg" alt="MHF Demo" />
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">minimal flash attention</p>
+        <p class="text-md italic">December 2024 - January 2025</p>
+        <p class="text-md">
+          Wrote a minimal implementation of Flash Attention to help learn CUDA
+          alongside a website to visualize its effect on input embeddings.
+        </p>
+        <p class="text-md font-medium">
+          Links:
+          <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/flash-attn">GitHub</a>
+        </p>
+        <div class="p-4">
+          <img class="max-h-[40rem] max-w-full" src="../assets/flash-attn-demo.jpeg" alt="Flash Attention Demo" />
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">formless</p>
+        <p class="text-md italic">September 2024 - March 2025</p>
+        <p class="text-md">
+          Created a hard handwriting image OCR system via a public API,
+          website, and PyPI package, utilizing a fine-tuned
+          Qwen2.5-VL-7B-Instruct. Used FineWeb-inspired data quality filtering
+          and stratified deduplication alongside SFT and DPO on
+          worst-performing samples to reduce character error rate by 8.18%
+          compared to the base model. Created the website using FastHTML to
+          learn about the library and hypermedia systems.
+        </p>
+        <p class="text-md font-medium">
+          Links:
+          <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/formless">GitHub</a>
+        </p>
+        <div class="p-4">
+          <img class="max-h-[40rem] max-w-full" src="../assets/formless-demo.jpeg" alt="Formless Demo" />
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">dilemma</p>
+        <p class="text-md italic">January - April 2024</p>
+        <p class="text-md">
+          Built a real estate website demo to learn about full-stack
+          development using React.js, Next.js, and TailwindCSS for the
+          frontend, and FastAPI, PostgreSQL, and SQLModel for the backend.
+        </p>
+        <p class="text-md font-medium">
+          Links:
+          <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/dilemma">GitHub</a>
+        </p>
+        <div class="p-4">
+          <img class="max-h-[40rem] max-w-full" src="../assets/dilemma-demo.jpg" alt="Dilemma Demo" />
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">captafied</p>
+        <p class="text-md italic">December 2022 - February 2023</p>
+        <p class="text-md">
+          Built a website for tabular data analysis using natural language.
+          Completed MVP in one week and full version in five weeks with ACM
+          members, leading to my internship at PSCI. Integrated Plotly Dash
+          for diagram generation and display, ydata-profiling for data
+          reports, AWS S3 to store data cheaply, and AWS Lambda (+ Docker) to
+          reduce inference costs.
+        </p>
+        <p class="text-md font-medium">
+          Links:
+          <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/captafied">GitHub</a>
+        </p>
+        <div class="p-4">
+          <video class="max-h-[40rem] max-w-full" alt="Captafied Demo" controls loop muted>
+            <source src="../assets/captafied-demo.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">admirer</p>
+        <p class="text-md italic">September - November 2022</p>
+        <p class="text-md">
+          Built and served a CLIP + GPT-2-based VLM nearly two years before
+          any major provider release. Highlighted as a top FSDL 2022 project
+          among industry professionals and post-docs, and won "Most Promising
+          Entry" at ZenML's MLOps competition.
+        </p>
+        <p class="text-md font-medium">
+          Links:
+          <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/admirer">GitHub</a>,
+          <a class="underline hover:text-zinc-900" href="https://bit.ly/fsdl-showcase">FSDL Showcase</a>,
+          <a class="underline hover:text-zinc-900" href="https://bit.ly/zenml-vid">ZenML Video</a>,
+          <a class="underline hover:text-zinc-900" href="https://bit.ly/zenml-blog">ZenML Blog</a>,
+          <a class="underline hover:text-zinc-900" href="https://bit.ly/zenml-post">ZenML Post</a>
+        </p>
+        <div class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4">
+          <img class="max-h-[40rem] max-w-full" src="../assets/admirer-demo.jpg" alt="Admirer Demo" />
+          <img class="max-h-[40rem] max-w-full" src="../assets/admirer-pipeline.jpg" alt="Admirer Pipeline" />
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-start gap-2">
+        <p class="text-xl font-medium">chexray</p>
+        <p class="text-md italic">April 2020 - February 2022</p>
+        <div class="flex flex-col justify-center items-start gap-4 text-md">
+          <p>
+            Created a website that uses chest X-rays to generate detailed
+            diagnoses for patients with lung diseases. I felt that this was a
+            great way for me to not only apply what I'd learn in the online
+            courses I took, but also learn how to test ideas in interesting
+            papers for myself.
+          </p>
+          <p>
+            In my first iteration, I wanted to learn Keras and coincidentally
+            stumbled across a chest x-ray disease dataset on Kaggle. I then
+            built an image classifier to determine whether a person's chest
+            x-ray is normal or contains COVID19, viral pneumonia, or bacterial
+            pneumonia.
+          </p>
+          <p>
+            In my second iteration, I wanted to explore classifying even more
+            diseases in addition to displaying a confidence level for the
+            predictions. I then built a new image classifier to do just that.
+          </p>
+          <p>
+            In my third iteration, I wanted to apply what I'd learned in the
+            2020 edition of the fast.ai course and took a different approach
+            to this problem. I decided to train two models: a model that
+            generates radiologist reports from the chest x-rays and a
+            classification model that summarizes the generated report, the
+            images, and other clinical data into a list of diseases the
+            patient most likely needs to be checked out for. I even got the
+            chance to work with a biology teacher at my high school to help me
+            understand the technical details of x-rays and the diseases they
+            can detect, which culminated in a presentation for the entire
+            school to see.
+          </p>
+          <p>
+            In my last iteration, I used around eight percent of the training
+            set from the MIMIC-CXR dataset to improve the two above-mentioned
+            models. In the end, the report generation model achieved a Bleu4
+            score of 0.0704 and the diagnosis model achieved a precision of
+            .545 and a recall of .824. As a comparison, a contemporary SOTA
+            model uses the entire training set to achieve a Bleu4 score of
+            0.103. For classification, the authors use an NLP labeler to
+            achieve a precision of 0.333 and a recall of 0.273.
+          </p>
+        </div>
+        <p class="text-md font-medium">
+          Links:
+          <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/covid-pneumonia">First
+            Iteration</a>,
+          <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/xray">Second Iteration</a>,
+          <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/chexray-v1">Third Iteration</a>,
+          <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/chexray-v2">Final Iteration</a>,
+          <a class="underline hover:text-zinc-900" href="https://arxiv.org/abs/1502.03044">
+            Report Generation Model
+          </a>
+          ,
+          <a class="underline hover:text-zinc-900"
+            href="https://forums.fast.ai/t/gradient-blending-for-multi-modal-models-in-progress/75645/12">
+            Multi-Modal Classification Model
+          </a>
+          ,
+          <a class="underline hover:text-zinc-900" href="https://bit.ly/3SUP5qA">
+            SOTA Comparison
+          </a>
+          ,
+          <a class="underline hover:text-zinc-900" href="https://bit.ly/3hXl4Jq">
+            NLP Labeler
+          </a>
+        </p>
+        <div class="p-4 grid grid-cols-1 md:grid-cols-2 justify-start items-center gap-4">
+          <img class="max-h-[40rem] max-w-full" src="../assets/chexray-report.jpg" alt="CheXRay Report" />
+          <img class="max-h-[40rem] max-w-full" src="../assets/chexray-scan.jpg" alt="CheXRay Scan" />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col justify-center items-start gap-4">
+      <h1 class="text-2xl font-semibold">Awards</h1>
+      <ul class="list-disc list-inside text-md">
+        <li>GPU Mode Practice Round Winner</li>
+        <li>Most Promising Entry @ ZenML MLOps Competition</li>
+        <li>Top-25 Project of FSDL</li>
+        <li>AP Scholar Award</li>
+        <li>Black belt in Taekwondo, certified by World Taekwondo.</li>
+        <li>Music Teachers National Association (MTNA) level 10 pianist.</li>
+      </ul>
+    </div>
+  </main>
+</body>
+
 </html>
