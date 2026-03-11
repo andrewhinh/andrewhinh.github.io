@@ -411,10 +411,24 @@
       <h1 class="text-2xl font-semibold">Projects</h1>
       <div class="flex flex-col justify-center items-start gap-2">
         <p class="text-xl font-medium">db-rs</p>
-        <p class="text-md italic">March 2026 - Present</p>
+        <p class="text-md italic">March 2026</p>
         <p class="text-md">
           A Redis client and server written in Rust.
         </p>
+        <p class="text-md">Features include:</p>
+        <ul class="list-disc list-inside text-md pl-4">
+          <li>PING, GET, SET, PUBLISH, SUBSCRIBE, DEL, EXISTS, EXPIRE, TTL, PTTL</li>
+          <li>AOF append for mutating commands, replay on startup, and truncation-tolerant replay</li>
+          <li>Snapshot and restore</li>
+          <li>AOF rewrite from current state with tombstones</li>
+          <li>Ordered change stream on `__changes__` via broadcast</li>
+          <li>Snapshot and offset bootstrap (`__changes__@boot`) for new consumers</li>
+          <li>Leader/follower async replication</li>
+          <li>Resume from persisted offset</li>
+          <li>Read-your-writes and monotonic reads</li>
+          <li>CAS for optimistic concurrency</li>
+          <li>Event-time tumbling windows with watermark and late-event corrections</li>
+        </ul>
         <p class="text-md font-medium">
           Links:
           <a class="underline hover:text-zinc-900" href="https://github.com/andrewhinh/db-rs">GitHub</a>
