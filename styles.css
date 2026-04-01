@@ -1,0 +1,19 @@
+.desktop-nav-label {
+  display: inline;
+}
+
+.mobile-nav-label {
+  display: inline;
+}
+
+@media (max-width: 767px) {
+  .desktop-nav-label {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-nav-label {
+    display: none;
+  }
+}
