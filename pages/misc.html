@@ -1,351 +1,497 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" font-size="16px">
-
-<head>
-  <meta charset="utf-8" name="viewport" content="width=device-width,
-    initial-scale=1, maximum-scale=1.0, user-scalable=no"" />
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+    />
     <title>andrew hinh | misc</title>
-    <link rel=" shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="prefetch" href="../assets/momo-pic.webp" as="image" />
-  <link rel="stylesheet" href="../styles.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
-</head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="prefetch" href="../assets/momo-pic.webp" as="image" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<body
-  class="flex flex-col justify-center items-center gap-16 p-8 md:p-24 text-zinc-600 bg-stone-200 font-['Montserrat',system-ui,'Segoe_UI',Roboto,Helvetica,Arial,sans-serif,'Apple_Color_Emoji','Segoe_UI_Emoji','Segoe_UI_Symbol']">
-  <nav class="w-full flex justify-between items-center text-2xl font-medium">
-    <a href="../index.html" class="hover:text-zinc-900">
-      <span class="mobile-nav-label">Andrew Hinh</span>
-      <span class="desktop-nav-label">Andrew Hinh &mdash; Misc</span>
-    </a>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <a href="https://blog.ajhinh.com/" class="inline-flex items-center gap-1 hover:text-zinc-900">
-        writing
-        <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" class="w-4 h-4 shrink-0">
-          <path d=" m57.17 253c-25.39 0-47.17-21.89-47.17-47.15 0-13.16 5.14-25.55 14.63-34.45l52.32-52c2.31-2.31 5.39-1.21
+  <body
+    class="flex flex-col justify-center items-center gap-16 p-8 md:p-24 text-zinc-600 bg-stone-200 font-['Montserrat',system-ui,'Segoe_UI',Roboto,Helvetica,Arial,sans-serif,'Apple_Color_Emoji','Segoe_UI_Emoji','Segoe_UI_Symbol']"
+  >
+    <nav class="w-full flex justify-between items-center text-2xl font-medium">
+      <a href="../index.html" class="hover:text-zinc-900">
+        <span class="mobile-nav-label">Andrew Hinh</span>
+        <span class="desktop-nav-label">Andrew Hinh &mdash; Misc</span>
+      </a>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a
+          href="https://blog.ajhinh.com/"
+          class="inline-flex items-center gap-1 hover:text-zinc-900"
+        >
+          writing
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="256"
+            height="256"
+            viewBox="0 0 256 256"
+            class="w-4 h-4 shrink-0"
+          >
+            <path
+              d=" m57.17 253c-25.39 0-47.17-21.89-47.17-47.15 0-13.16 5.14-25.55 14.63-34.45l52.32-52c2.31-2.31 5.39-1.21
                 6.72 0.41 1.73 2.21 1.03 5.2-0.58 6.71l-53.6 53.1c-7.93 7.73-11.78 16.83-11.78 26.57 0 20.77 16.47 38.3 39.14
                 38.3 11.03 0 21.23-4.61 28.06-12.06l58.88-59.81c8.42-8.71 11.6-21.1
                 9.49-33.69-2.6-12.8-11.84-23.74-24.67-27.58l-0.32-0.1c-2.97-0.81-3.78-2.92-3.48-5.03 0.41-2.71 2.92-3.62
                 5.03-3.31 16.98 3.84 29.39 17.82 33.24 35.91 3.46 15.79-2.87 32.19-13.81 42.41l-58.36 58.55c-9.05 9-20.6
-                13.22-33.74 13.22z" fill="currentColor" />
-          <path
-            d="m173.9 139.5c-1.2 0-2.4-0.5-3.3-1.61-1.7-2.01-1.3-5.02 0.6-6.62l55.52-56.04c8.03-8.22 11.58-19.16 10.28-29.6-2.3-19.3-16.34-34.99-38.9-34.99-10.93 0-20.47 4.41-27.2 11.95l-60.9 62.61c-8.12 8.12-11.19 19.66-9.98 30.2 2.11 13.2 11.64 26.98 24.78 30.29 2.72 0.7 3.92 3.11 3.42 5.32-0.6 2.61-2.91 3.81-5.32 3.31-17.07-4.41-29.9-19.29-31.8-38.19-1.51-12.69 3.11-27.37 12.74-37.11l61.1-63.91c9.43-9.74 20.27-13.14 32.8-13.14 25.03 0 46.39 19.91 48.6 44.76 1.31 13.1-4.12 27.09-13.55 36.53l-55.71 54.93c-0.81 0.91-1.98 1.31-3.18 1.31z"
-            fill="currentColor" />
-          <path
-            d="m58.88 232.5c-15.17 0-28.51-12.39-28.51-27.88 0-8.61 3.36-15.74 9.09-20.85l47.16-46.18c2.11-2.11 4.62-1.61 6.02 0.1 1.61 2.01 1.1 4.92-0.5 6.52l-46.86 46.68c-4.82 4.51-6.42 8.52-6.42 13.63 0 10.54 8.32 18.76 19.56 18.76 6.63 0 11.76-2.81 15.31-7.32l54.4-55.44c4.43-4.41 6.03-11.84 3.53-18.68-1.71-4.71-4.52-7.91-8.35-9.82-8.63-4.31-12.95-13.34-12.55-22.15 0.3-7.53 3.57-13.96 8.19-18.47l58.28-61.33c6.13-6.43 13.56-8.64 19.89-8.64 15.87 0 28.2 12.9 28.2 28.28 0 8.32-3.65 16.34-8.98 21.56l-47.86 48.61c-2.01 2.01-4.61 1.51-6.12-0.2-1.8-2.01-1.5-4.62 0.2-6.33l48.27-49.71c4.93-4.91 5.83-9.72 5.43-14.93-1.1-9.73-8.53-17.96-19.46-17.96-6.23 0-11.26 2.51-13.77 5.92l-57.91 60.43c-4.73 4.41-5.93 8.92-5.43 15.05 0.6 5.93 4.12 10.94 8.95 13.55 7.53 3.91 13.75 12.33 14.05 21.46 0.1 8.73-3.72 16.46-8.44 21.17l-55.62 56.35c-5.82 5.61-12.65 7.82-19.75 7.82z"
-            fill="currentColor" />
-        </svg>
-      </a>
-      <a href="./resume.html" class="hover:text-zinc-900"> resume </a>
-      <a href="./misc.html" class="hover:text-zinc-900"> misc </a>
-    </div>
-  </nav>
-  <main class="w-full md:w-2/3 text-lg leading-8">
-    <ul class="list-disc list-inside [&_ul]:list-[revert]">
-      <li>
-        I have a labrador retriever named Momo. He has his own
-        <a class="underline hover:text-zinc-900" href="https://andrewhinh.github.io/momo/">website</a>.
-        <div class="p-4">
-          <img class="max-h-[40rem] max-w-full" alt="Momo Picture" src="../assets/momo-pic.webp" />
-        </div>
-      </li>
-      <li class="pb-2">
-        I keep track of my climbing training plan in this
-        <a class="underline hover:text-zinc-900"
-          href="
-                  https://docs.google.com/document/d/1PrkreN6WgK-dnq078dgGwkNhWRERZSyuTaH0gOgzhCQ/edit#heading=h.9envx5pa8lc">
-          document</a>. I occasionally upload climbing videos to my
-        <a class="underline hover:text-zinc-900" href="https://www.youtube.com/@ajhinh">YouTube channel</a>. I've also
-        found
-        <a class="underline hover:text-zinc-900"
-          href="https://rockrun.com/blogs/the-flash-rock-run-blog/rock-climbing-shoe-sizing-guide">this article</a>
-        to be useful in determining the right shoe size for me.
-      </li>
-      <li>
-        Books I'm currently reading:
-        <ul class="list-disc list-inside pl-4 py-2">
-          <li>
-            <span class="italic">
-              AI Systems Performance Engineering: Optimizing Model Training
-              and Inference Workloads with GPUs, CUDA, and PyTorch
-            </span>
-            by Chris Fregly
-          </li>
-        </ul>
-      </li>
-      <li>
-        Some of the books I'm planning to read:
-        <ul class="list-disc list-inside pl-4 py-2">
-          <li>
-            <span class="italic">Computer Architecture: A Quantitative Approach, 7th
-              Edition</span>
-            by John L. Hennessy, David A. Patterson, and Christos Kozyrakis
-          </li>
-          <li>
-            <span class="italic">The C Programming Language, 2nd Edition</span>
-            by Brian W. Kernighan and Dennis M. Ritchie
-          </li>
-          <li>
-            <span class="italic">Hacker's Delight</span>
-            by Henry S. Warren, Jr.
-          </li>
-        </ul>
-      </li>
-      <li>
-        Some of the books I've read:
-        <ul class="list-disc list-inside pl-4 py-2">
-          <li>
-            <span class="italic">Designing Data-Intensive Applications, 2nd Edition</span>
-            by Martin Kleppmann
-          </li>
-          <li>
-            <span class="italic">High Performance Browser Networking</span>
-            by Ilya Grigorik
-          </li>
-          <li>
-            <span class="italic">Operating Systems: Three Easy Pieces</span>
-            by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
-          </li>
-          <li>
-            <span class="italic">Advanced Programming in the UNIX Environment</span>
-            by W. Richard Stevens and Stephen A. Rago
-          </li>
-          <li>
-            <span class="italic">Moving the Needle: How An Average Climber Can Do The Hardest Route In The World</span>
-            by Dave Macleod
-          </li>
-          <li>
-            <span class="italic">9 out of 10 Climbers Make the Same Mistakes</span>
-            by Dave Macleod
-          </li>
-          <li>
-            <span class="italic">Why Diets Make Us Fat</span>
-            by Sandra Aamodt
-          </li>
-          <li>
-            <span class="italic">The Future of Nutrition</span>
-            by T. Colin Campbell
-          </li>
-          <li>
-            <span class="italic">Four Thousand Weeks</span>
-            by Oliver Burkeman
-          </li>
-          <li>
-            <span class="italic">Programming Massively Parallel Processors</span>
-            by Wen-mei W. Hwu, David B. Kirk, and Izzat El Hajj
-          </li>
-          <li>
-            <span class="italic">Hypermedia Systems</span>
-            by Carson Gross, Adam Stepinski, and Deniz Akşimşek
-          </li>
-          <li>
-            <span class="italic">1984</span>
-            by George Orwell
-          </li>
-          <li>
-            <span class="italic">White Holes</span>
-            by Carlo Rovelli
-          </li>
-          <li>
-            <span class="italic">Love and Math</span>
-            by Edward Frenkel
-          </li>
-          <li>
-            <span class="italic">Animal Farm</span>
-            by George Orwell
-          </li>
-          <li>
-            <span class="italic">How To</span>
-            by Randall Munroe
-          </li>
-          <li>
-            <span class="italic">What If? 2</span>
-            by Randall Munroe
-          </li>
-          <li>
-            <span class="italic">Framers</span>
-            by Kenneth Cukier, Viktor Mayer-Schönberger, and Francis de
-            Véricourt
-          </li>
-          <li>
-            <span class="italic">Quantum Computing for Everyone</span> by
-            Chris Bernhardt
-          </li>
-          <li>
-            <span class="italic">The War of Art</span>
-            by Steven Pressfield
-          </li>
-          <li>
-            <span class="italic">There Are Places in the World Where Rules Are Less Important
-              Than Kindness</span>
-            by Carlo Rovelli
-          </li>
-          <li>
-            <span class="italic">What If?</span>
-            by Randall Munroe
-          </li>
-          <li>
-            <span class="italic">Business Adventures</span> by John Brooks
-          </li>
-          <li>
-            <span class="italic">Zero to One</span>
-            by Blake Masters and Peter Thiel
-          </li>
-          <li>
-            <span class="italic">Enlightenment Now </span>
-            by Steven Pinker
-          </li>
-          <li>
-            <span class="italic">Taxi from Another Planet </span>
-            by Charles S. Cockell
-          </li>
-          <li><span class="italic">Lying</span> by Sam Harris</li>
-          <li>
-            <span class="italic">Superintelligence </span>
-            by Nick Bostrom
-          </li>
-          <li><span class="italic">Living in Data</span> by Jer Thorp</li>
-          <li><span class="italic">Life 3.0</span> by Max Tegmark</li>
-        </ul>
-      </li>
-      <li>
-        Some desserts I've made:
-        <ul class="list-disc list-inside pl-4 py-2">
-          <li>
-            <a class="underline hover:text-zinc-900" href="https://www.youtube.com/watch?v=TeoS_fQWvkY">Japanese
-              Cheesecake</a>
-            (my mom's favorite!)
-          </li>
-          <li>
-            <a class="underline hover:text-zinc-900" href="https://www.youtube.com/watch?v=Ov4u0ARMWKQ">NY
-              Cheesecake</a>
-          </li>
-          <li>
-            <a class="underline hover:text-zinc-900" href="https://www.youtube.com/watch?v=OkzpwHodaAs">Baklava</a>
-            (my favorite!)
-          </li>
-          <li>
-            <a class="underline hover:text-zinc-900" href="https://www.youtube.com/watch?v=jICNW-T11bM">Cookies</a>
-          </li>
-          <li>
-            <a class="underline hover:text-zinc-900" href="https://www.youtube.com/watch?v=_Q0FYoCl4Cs">Cinnamon
-              Rolls</a>
-          </li>
-          <li>
-            <a class="underline hover:text-zinc-900" href="https://www.youtube.com/watch?v=JGL2m6-SLMQ">Monkey Bread</a>
-          </li>
-          <li>
-            <a class="underline hover:text-zinc-900" href="https://www.youtube.com/watch?v=1nqpTkHpYyE">French Toast</a>
-            with a
-            <a class="underline hover:text-zinc-900" href="https://www.youtube.com/watch?v=abeaDiUkDJs">separate video
-              for measurements</a>
-          </li>
-          <li>
-            <a class="underline hover:text-zinc-900" href="https://m.youtube.com/watch?v=vkcHmpKxFwg">Pancakes</a>
-            and
-            <a class="underline hover:text-zinc-900"
-              href="https://tasty.co/recipe/strawberry-shortcake-sheet-pan-pancakes">a sheet-pan version</a>
-          </li>
-          <li>
-            <a class="underline hover:text-zinc-900" href="https://www.youtube.com/watch?v=cYRG5rkmr-s">Ube Roll</a>
-          </li>
-          <li>
-            <a class="underline hover:text-zinc-900" href="https://www.youtube.com/watch?v=VvJm4pQZ04s">Brownies</a>
-          </li>
-          <li>
-            <a class="underline hover:text-zinc-900" href="https://www.youtube.com/watch?v=C__032Z_m8g">Tiramisu</a>
-            (my brother's favorite!)
-          </li>
-          <li>
-            <a class="underline hover:text-zinc-900"
-              href="https://www.attica.com.au/attica-digest/recipe-the-evil-genius">The Evil Genius Cake</a>
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        I'm a black belt in Taekwondo, certified by World Taekwondo.
-        <div class="p-4 flex flex-wrap justify-start items-center gap-4">
-          <img class="max-h-[40rem] max-w-full" alt="TKD Master Picture" src="../assets/tkd-master.webp" />
-          <img class="max-h-[40rem] max-w-full" alt="TKD Group Picture" src="../assets/tkd-group.webp" />
-        </div>
-      </li>
-      <li>
-        I'm a Music Teachers National Association (MTNA) level 10 pianist.
-        Some songs I've played:
-        <ul class="list-disc list-inside pl-4 py-2">
-          <li>
-            <span class="italic">Scherzo, Op. 31, No. 2</span> by Chopin
-          </li>
-          <li>
-            <span class="italic">Ballade pour Adeline</span> by Clayderman
-          </li>
-          <div>
-            <li><span class="italic">Prelude No. 1</span> by Gershwin</li>
-            <iframe class="h-[14rem] w-[21rem] md:h-[40rem] md:w-[60rem]"
-              src="https://www.youtube.com/embed/X7xgJlasLGw" title="Prelude No. 1 by Gershwin" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-            <li>
-              <span class="italic">Nocturne, Op. 9, No. 2</span> by Chopin
-            </li>
-            <iframe class="h-[14rem] w-[21rem] md:h-[40rem] md:w-[60rem]"
-              src="https://www.youtube.com/embed/JEi5AueSlSw" title="Nocturne, Op. 9, No. 2 by Chopin" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-            <li>
-              <span class="italic">Piano Sonata, Op. 27, No.2</span> by
-              Beethoven
-            </li>
+                13.22-33.74 13.22z"
+              fill="currentColor"
+            />
+            <path
+              d="m173.9 139.5c-1.2 0-2.4-0.5-3.3-1.61-1.7-2.01-1.3-5.02 0.6-6.62l55.52-56.04c8.03-8.22 11.58-19.16 10.28-29.6-2.3-19.3-16.34-34.99-38.9-34.99-10.93 0-20.47 4.41-27.2 11.95l-60.9 62.61c-8.12 8.12-11.19 19.66-9.98 30.2 2.11 13.2 11.64 26.98 24.78 30.29 2.72 0.7 3.92 3.11 3.42 5.32-0.6 2.61-2.91 3.81-5.32 3.31-17.07-4.41-29.9-19.29-31.8-38.19-1.51-12.69 3.11-27.37 12.74-37.11l61.1-63.91c9.43-9.74 20.27-13.14 32.8-13.14 25.03 0 46.39 19.91 48.6 44.76 1.31 13.1-4.12 27.09-13.55 36.53l-55.71 54.93c-0.81 0.91-1.98 1.31-3.18 1.31z"
+              fill="currentColor"
+            />
+            <path
+              d="m58.88 232.5c-15.17 0-28.51-12.39-28.51-27.88 0-8.61 3.36-15.74 9.09-20.85l47.16-46.18c2.11-2.11 4.62-1.61 6.02 0.1 1.61 2.01 1.1 4.92-0.5 6.52l-46.86 46.68c-4.82 4.51-6.42 8.52-6.42 13.63 0 10.54 8.32 18.76 19.56 18.76 6.63 0 11.76-2.81 15.31-7.32l54.4-55.44c4.43-4.41 6.03-11.84 3.53-18.68-1.71-4.71-4.52-7.91-8.35-9.82-8.63-4.31-12.95-13.34-12.55-22.15 0.3-7.53 3.57-13.96 8.19-18.47l58.28-61.33c6.13-6.43 13.56-8.64 19.89-8.64 15.87 0 28.2 12.9 28.2 28.28 0 8.32-3.65 16.34-8.98 21.56l-47.86 48.61c-2.01 2.01-4.61 1.51-6.12-0.2-1.8-2.01-1.5-4.62 0.2-6.33l48.27-49.71c4.93-4.91 5.83-9.72 5.43-14.93-1.1-9.73-8.53-17.96-19.46-17.96-6.23 0-11.26 2.51-13.77 5.92l-57.91 60.43c-4.73 4.41-5.93 8.92-5.43 15.05 0.6 5.93 4.12 10.94 8.95 13.55 7.53 3.91 13.75 12.33 14.05 21.46 0.1 8.73-3.72 16.46-8.44 21.17l-55.62 56.35c-5.82 5.61-12.65 7.82-19.75 7.82z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <a href="./resume.html" class="hover:text-zinc-900"> resume </a>
+        <a href="./misc.html" class="hover:text-zinc-900"> misc </a>
+      </div>
+    </nav>
+    <main class="w-full md:w-2/3 text-lg leading-8">
+      <ul class="list-disc list-inside [&_ul]:list-[revert]">
+        <li>
+          I have a labrador retriever named Momo. He has his own
+          <a
+            class="underline hover:text-zinc-900"
+            href="https://andrewhinh.github.io/momo/"
+            >website</a
+          >.
+          <div class="p-4">
+            <img
+              class="max-h-[40rem] max-w-full"
+              alt="Momo Picture"
+              src="../assets/momo-pic.webp"
+            />
           </div>
-          <div>
+        </li>
+        <li class="pb-2">
+          I keep track of my climbing training plan in this
+          <a
+            class="underline hover:text-zinc-900"
+            href="
+                  https://docs.google.com/document/d/1PrkreN6WgK-dnq078dgGwkNhWRERZSyuTaH0gOgzhCQ/edit#heading=h.9envx5pa8lc"
+          >
+            document</a
+          >. I occasionally upload climbing videos to my
+          <a
+            class="underline hover:text-zinc-900"
+            href="https://www.youtube.com/@ajhinh"
+            >YouTube channel</a
+          >. I've also found
+          <a
+            class="underline hover:text-zinc-900"
+            href="https://rockrun.com/blogs/the-flash-rock-run-blog/rock-climbing-shoe-sizing-guide"
+            >this article</a
+          >
+          to be useful in determining the right shoe size for me.
+        </li>
+        <li>
+          Books I'm currently reading:
+          <ul class="list-disc list-inside pl-4 py-2">
             <li>
-              <span class="italic">Piano Sonata, Op. 13, No.8</span> by
-              Beethoven
+              <span class="italic">
+                AI Systems Performance Engineering: Optimizing Model Training
+                and Inference Workloads with GPUs, CUDA, and PyTorch
+              </span>
+              by Chris Fregly
             </li>
-            <iframe class="h-[14rem] w-[21rem] md:h-[40rem] md:w-[60rem]"
-              src="https://www.youtube.com/embed/xkAU4uY1Ncg" title="Piano Sonata, Op. 13, No.8 by Beethoven"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-            <li><span class="italic">Gymnopedie, No. 1</span> by Satie</li>
-          </div>
-          <li><span class="italic">Odeon</span> by Nazareth</li>
-          <li>
-            <span class="italic">Praeludium und Fuge B - Dur, BWV 866</span>
-            by Bach
-          </li>
-          <li><span class="italic">Paganini Etude No. 5</span> by Liszt</li>
-          <li><span class="italic">Tarantella</span> by Pieczonka</li>
-          <li>
-            <span class="italic">Prelude in E Minor, Op. 28, No. 4</span> by
-            Chopin
-          </li>
-          <li><span class="italic">Prelude, BWV 935</span> by Bach</li>
-          <li>
-            <span class="italic">In the Forest, Op. 51, No. 4</span> by
-            Rebikov
-          </li>
-          <li>
-            <span class="italic">The Storm, Op. 109, No. 13</span> by
-            Burgmuller
-          </li>
-          <li><span class="italic">Waltz, Op. Post.</span> by Chopin</li>
-          <li><span class="italic">Valse Dramatico</span> by Bober</li>
-          <li><span class="italic">Fur Elise</span> by Beethoven</li>
-          <li><span class="italic">Sleeting</span> by Heller</li>
-        </ul>
-      </li>
-      <li>
-        I've run up to seven miles in one run, and (on a separate occasion)
-        I've run a six minute mile.
-        <div class="p-4">
-          <img class="max-h-[40rem] max-w-full" alt="Running Picture" src="../assets/running.webp" />
-        </div>
-      </li>
-    </ul>
-  </main>
-</body>
+          </ul>
+        </li>
+        <li>
+          Some of the books I'm planning to read:
+          <ul class="list-disc list-inside pl-4 py-2">
+            <li>
+              <span class="italic"
+                >Computer Architecture: A Quantitative Approach, 7th
+                Edition</span
+              >
+              by John L. Hennessy, David A. Patterson, and Christos Kozyrakis
+            </li>
+            <li>
+              <span class="italic"
+                >The C Programming Language, 2nd Edition</span
+              >
+              by Brian W. Kernighan and Dennis M. Ritchie
+            </li>
+            <li>
+              <span class="italic">Hacker's Delight</span>
+              by Henry S. Warren, Jr.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Some of the books I've read:
+          <ul class="list-disc list-inside pl-4 py-2">
+            <li>
+              <span class="italic"
+                >Designing Data-Intensive Applications, 2nd Edition</span
+              >
+              by Martin Kleppmann
+            </li>
+            <li>
+              <span class="italic">High Performance Browser Networking</span>
+              by Ilya Grigorik
+            </li>
+            <li>
+              <span class="italic">Operating Systems: Three Easy Pieces</span>
+              by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
+            </li>
+            <li>
+              <span class="italic"
+                >Advanced Programming in the UNIX Environment</span
+              >
+              by W. Richard Stevens and Stephen A. Rago
+            </li>
+            <li>
+              <span class="italic"
+                >Moving the Needle: How An Average Climber Can Do The Hardest
+                Route In The World</span
+              >
+              by Dave Macleod
+            </li>
+            <li>
+              <span class="italic"
+                >9 out of 10 Climbers Make the Same Mistakes</span
+              >
+              by Dave Macleod
+            </li>
+            <li>
+              <span class="italic">Why Diets Make Us Fat</span>
+              by Sandra Aamodt
+            </li>
+            <li>
+              <span class="italic">The Future of Nutrition</span>
+              by T. Colin Campbell
+            </li>
+            <li>
+              <span class="italic">Four Thousand Weeks</span>
+              by Oliver Burkeman
+            </li>
+            <li>
+              <span class="italic"
+                >Programming Massively Parallel Processors</span
+              >
+              by Wen-mei W. Hwu, David B. Kirk, and Izzat El Hajj
+            </li>
+            <li>
+              <span class="italic">Hypermedia Systems</span>
+              by Carson Gross, Adam Stepinski, and Deniz Akşimşek
+            </li>
+            <li>
+              <span class="italic">1984</span>
+              by George Orwell
+            </li>
+            <li>
+              <span class="italic">White Holes</span>
+              by Carlo Rovelli
+            </li>
+            <li>
+              <span class="italic">Love and Math</span>
+              by Edward Frenkel
+            </li>
+            <li>
+              <span class="italic">Animal Farm</span>
+              by George Orwell
+            </li>
+            <li>
+              <span class="italic">How To</span>
+              by Randall Munroe
+            </li>
+            <li>
+              <span class="italic">What If? 2</span>
+              by Randall Munroe
+            </li>
+            <li>
+              <span class="italic">Framers</span>
+              by Kenneth Cukier, Viktor Mayer-Schönberger, and Francis de
+              Véricourt
+            </li>
+            <li>
+              <span class="italic">Quantum Computing for Everyone</span> by
+              Chris Bernhardt
+            </li>
+            <li>
+              <span class="italic">The War of Art</span>
+              by Steven Pressfield
+            </li>
+            <li>
+              <span class="italic"
+                >There Are Places in the World Where Rules Are Less Important
+                Than Kindness</span
+              >
+              by Carlo Rovelli
+            </li>
+            <li>
+              <span class="italic">What If?</span>
+              by Randall Munroe
+            </li>
+            <li>
+              <span class="italic">Business Adventures</span> by John Brooks
+            </li>
+            <li>
+              <span class="italic">Zero to One</span>
+              by Blake Masters and Peter Thiel
+            </li>
+            <li>
+              <span class="italic">Enlightenment Now </span>
+              by Steven Pinker
+            </li>
+            <li>
+              <span class="italic">Taxi from Another Planet </span>
+              by Charles S. Cockell
+            </li>
+            <li><span class="italic">Lying</span> by Sam Harris</li>
+            <li>
+              <span class="italic">Superintelligence </span>
+              by Nick Bostrom
+            </li>
+            <li><span class="italic">Living in Data</span> by Jer Thorp</li>
+            <li><span class="italic">Life 3.0</span> by Max Tegmark</li>
+          </ul>
+        </li>
+        <li>
+          Some desserts I've made:
+          <ul class="list-disc list-inside pl-4 py-2">
+            <li>
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://www.youtube.com/watch?v=TeoS_fQWvkY"
+                >Japanese Cheesecake</a
+              >
+              (my mom's favorite!)
+            </li>
+            <li>
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://www.youtube.com/watch?v=Ov4u0ARMWKQ"
+                >NY Cheesecake</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://www.youtube.com/watch?v=OkzpwHodaAs"
+                >Baklava</a
+              >
+              (my favorite!)
+            </li>
+            <li>
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://www.youtube.com/watch?v=jICNW-T11bM"
+                >Cookies</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://www.youtube.com/watch?v=_Q0FYoCl4Cs"
+                >Cinnamon Rolls</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://www.youtube.com/watch?v=JGL2m6-SLMQ"
+                >Monkey Bread</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://www.youtube.com/watch?v=1nqpTkHpYyE"
+                >French Toast</a
+              >
+              with a
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://www.youtube.com/watch?v=abeaDiUkDJs"
+                >separate video for measurements</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://m.youtube.com/watch?v=vkcHmpKxFwg"
+                >Pancakes</a
+              >
+              and
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://tasty.co/recipe/strawberry-shortcake-sheet-pan-pancakes"
+                >a sheet-pan version</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://www.youtube.com/watch?v=cYRG5rkmr-s"
+                >Ube Roll</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://www.youtube.com/watch?v=VvJm4pQZ04s"
+                >Brownies</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://www.youtube.com/watch?v=C__032Z_m8g"
+                >Tiramisu</a
+              >
+              (my brother's favorite!)
+            </li>
+            <li>
+              <a
+                class="underline hover:text-zinc-900"
+                href="https://www.attica.com.au/attica-digest/recipe-the-evil-genius"
+                >The Evil Genius Cake</a
+              >
+            </li>
+          </ul>
+        </li>
 
+        <li>
+          I'm a black belt in Taekwondo, certified by World Taekwondo.
+          <div class="p-4 flex flex-wrap justify-start items-center gap-4">
+            <img
+              class="max-h-[40rem] max-w-full"
+              alt="TKD Master Picture"
+              src="../assets/tkd-master.webp"
+            />
+            <img
+              class="max-h-[40rem] max-w-full"
+              alt="TKD Group Picture"
+              src="../assets/tkd-group.webp"
+            />
+          </div>
+        </li>
+        <li>
+          I'm a Music Teachers National Association (MTNA) level 10 pianist.
+          Some songs I've played:
+          <ul class="list-disc list-inside pl-4 py-2">
+            <li>
+              <span class="italic">Scherzo, Op. 31, No. 2</span> by Chopin
+            </li>
+            <li>
+              <span class="italic">Ballade pour Adeline</span> by Clayderman
+            </li>
+            <div>
+              <li><span class="italic">Prelude No. 1</span> by Gershwin</li>
+              <iframe
+                class="h-[14rem] w-[21rem] md:h-[40rem] md:w-[60rem]"
+                src="https://www.youtube.com/embed/X7xgJlasLGw"
+                title="Prelude No. 1 by Gershwin"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+              <li>
+                <span class="italic">Nocturne, Op. 9, No. 2</span> by Chopin
+              </li>
+              <iframe
+                class="h-[14rem] w-[21rem] md:h-[40rem] md:w-[60rem]"
+                src="https://www.youtube.com/embed/JEi5AueSlSw"
+                title="Nocturne, Op. 9, No. 2 by Chopin"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+              <li>
+                <span class="italic">Piano Sonata, Op. 27, No.2</span> by
+                Beethoven
+              </li>
+            </div>
+            <div>
+              <li>
+                <span class="italic">Piano Sonata, Op. 13, No.8</span> by
+                Beethoven
+              </li>
+              <iframe
+                class="h-[14rem] w-[21rem] md:h-[40rem] md:w-[60rem]"
+                src="https://www.youtube.com/embed/xkAU4uY1Ncg"
+                title="Piano Sonata, Op. 13, No.8 by Beethoven"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+              <li><span class="italic">Gymnopedie, No. 1</span> by Satie</li>
+            </div>
+            <li><span class="italic">Odeon</span> by Nazareth</li>
+            <li>
+              <span class="italic">Praeludium und Fuge B - Dur, BWV 866</span>
+              by Bach
+            </li>
+            <li><span class="italic">Paganini Etude No. 5</span> by Liszt</li>
+            <li><span class="italic">Tarantella</span> by Pieczonka</li>
+            <li>
+              <span class="italic">Prelude in E Minor, Op. 28, No. 4</span> by
+              Chopin
+            </li>
+            <li><span class="italic">Prelude, BWV 935</span> by Bach</li>
+            <li>
+              <span class="italic">In the Forest, Op. 51, No. 4</span> by
+              Rebikov
+            </li>
+            <li>
+              <span class="italic">The Storm, Op. 109, No. 13</span> by
+              Burgmuller
+            </li>
+            <li><span class="italic">Waltz, Op. Post.</span> by Chopin</li>
+            <li><span class="italic">Valse Dramatico</span> by Bober</li>
+            <li><span class="italic">Fur Elise</span> by Beethoven</li>
+            <li><span class="italic">Sleeting</span> by Heller</li>
+          </ul>
+        </li>
+        <li>
+          I've run up to seven miles in one run, and (on a separate occasion)
+          I've run a six minute mile.
+          <div class="p-4">
+            <img
+              class="max-h-[40rem] max-w-full"
+              alt="Running Picture"
+              src="../assets/running.webp"
+            />
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
 </html>
